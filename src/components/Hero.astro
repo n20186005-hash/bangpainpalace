@@ -61,6 +61,15 @@ const weatherMap = Object.fromEntries(
           <span class="text-goldBright text-xs font-semibold uppercase tracking-wider">{hero.ngoBadge}</span>
         </div>
       )}
+      {hero.quickBadges && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {hero.quickBadges.map((badge: string) => (
+            <span class="inline-flex items-center px-2.5 py-1 rounded-full bg-teakDeep/60 border border-gold/40 text-ivory/90 text-xs backdrop-blur-sm">
+              {badge}
+            </span>
+          ))}
+        </div>
+      )}
       <p class="mt-6 max-w-xl text-ivory/85 text-lg md:text-xl">{hero.subtitle}</p>
 
       <div class="mt-7 flex flex-wrap items-center gap-3">

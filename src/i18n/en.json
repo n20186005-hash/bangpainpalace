@@ -28,6 +28,7 @@
     "boardTitle": "Bang Pa-In",
     "boardEn": "Summer Palace of the Kings of Siam",
     "ngoBadge": "Independent NGO Guide | 100% Ad-Free",
+    "quickBadges": ["🏛️ Top 4 Thai Palaces", "🚗 1 Hour from Bangkok", "👗 Strict Dress Code"],
     "plannerTitle": "Golden Hour Planner",
     "liveWeather": "Live · Open-Meteo",
     "plannerNote": "Based on the palace's real coordinates",
@@ -80,7 +81,7 @@
     "microTitle": "Architectural styles",
     "micro": [
       { "title": "Thai (Rattanakosin)", "desc": "Gabled roofs, mother-of-pearl inlay and the Aisawan Throne Hall's classical proportions." },
-      { "title": "Chinese", "desc": "The Wehart Chamrun mansion, a two-storey teak-and-brick gift from overseas Chinese merchants." },
+      { "title": "Chinese", "desc": "Wehart Chamrun — a two-story Chinese-style mansion presented to King Rama V by the overseas Chinese chamber of commerce. It features a traditional mortise and tenon teak structure without a single iron nail, standing as a historical testament to Thai-Chinese culture and diplomacy." },
       { "title": "European", "desc": "Neo-classical and Neo-Renaissance halls, an Italianate lookout tower and marble busts." }
     ],
     "plantsTitle": "Gardens & grounds",
@@ -141,8 +142,8 @@
       { "title": "1872–1889 — Rama V's golden age", "text": "King Chulalongkorn rebuilt it as his summer seat, inviting Thai, Chinese and European builders to create the eclectic pavilions seen today." }
     ],
     "legend": {
-      "title": "The name",
-      "text": "'Bang Pa-In' is popularly read as 'the village of Lord Indra' — a poetic nod to the mythical king of the gods who, legend says, once dwelt here."
+      "title": "What's in a name?",
+      "text": "King Prasat Thong built a palace here, supposedly because it was the sacred place where he was born to a village woman. He claimed to be the 'son of Indra', so he named this place 'Bang Pa-In' (village of Indra)."
     },
     "didYouKnow": {
       "title": "Did you know?",
@@ -150,7 +151,7 @@
     },
     "folklore": {
       "title": "The queen and the river",
-      "tale": "In 1880 Queen Sunanda Kumariratana and her infant daughter drowned when their royal barge capsized near the palace. The king was said to have forbidden anyone to touch the queen as she struggled — under the law, commoners laying hands on royalty could be punished — and he never forgot the tragedy. A lakeside memorial still honours her.",
+      "tale": "In 1880, Queen Sunanda Kumariratana and her young daughter drowned when their royal barge capsized near the palace. Commoners dared not assist, due to the ancient and incredibly strict Lèse-majesté laws of Siam—touching a royal without permission was punishable by death. Following this tragedy, King Rama V completely abolished this archaic law and erected a bilingual Thai-English marble memorial behind the palace.",
       "shrineTitle": "The memorial",
       "shrine": "Near the water you'll find a marble memorial and statue of Queen Sunanda, a quiet corner where visitors still pause. It is one of the most poignant stories tied to the palace."
     }
@@ -170,8 +171,23 @@
       ]
     },
     "scamTip": {
-      "tag": "⚠ Arrival & Transport Tip",
-      "text": "Buy tickets only at the official booth inside the main gate. Ignore touts outside offering 'combined' or 'VIP' tickets. Standard tuk-tuk fare from Ayutthaya train station to the palace is around 40-50 THB. Beware of drivers claiming the palace is 'closed today for a royal ceremony/renovation' to offer alternative tours — always check at the official gate."
+      "tag": "⚠ Arrival & Transport Tips",
+      "text": "Only buy tickets at the official windows inside the main gate. Ignore touts outside selling 'combo' or 'VIP' tickets. Standard tuk-tuk fare from Ayutthaya train station to the palace is about 40-50 THB/person. Also, be wary of drivers claiming the palace is 'closed today for a royal event' to sell you other tours—always verify at the official gate yourself."
+    },
+    "golfCart": {
+      "title": "Golf Cart Rental",
+      "text": "The palace grounds are expansive and it gets hot. Renting a golf cart is highly recommended (approx. 400 THB for the first hour). Note: A valid driver's license is required."
+    },
+    "dressCode": {
+      "title": "Dress Code Checker",
+      "intro": "As an active royal palace, the dress code is strictly enforced:",
+      "allowed": "✅ Allowed: Trousers/skirts below the knee, T-shirts with sleeves, short-sleeve shirts.",
+      "forbidden": "❌ Forbidden: Sleeveless tops, ripped jeans, yoga pants, crop tops, shorts/mini-skirts.",
+      "tip": "💡 Tip: Sarongs and trousers are available for rent/purchase at the entrance if needed."
+    },
+    "hiddenGem": {
+      "title": "💡 Hidden Gem: Gothic Temple Across the River",
+      "text": "Don't leave immediately after touring the palace! Take the free cable car across the Chao Phraya River to Wat Niwet Thammaprawat. This is a rare Thai Buddhist temple built in a Gothic Revival church style, complete with stained glass windows and a stunning visual impact."
     },
     "hours": {
       "tag": "🕗",

@@ -55,6 +55,31 @@ const guideImgs = [
       </div>
     )}
 
+    <!-- Golf Cart -->
+    {guide.golfCart && (
+      <div class="mt-8 rounded-xl bg-emerald-50 border border-emerald-200 p-5 max-w-4xl shadow-sm">
+        <h3 class="font-display text-emerald-800 text-lg font-semibold flex items-center gap-2">
+          🚙 {guide.golfCart.title}
+        </h3>
+        <p class="mt-2 text-emerald-900/80 text-sm leading-relaxed">
+          {guide.golfCart.text}
+        </p>
+      </div>
+    )}
+
+    <!-- Dress Code -->
+    {guide.dressCode && (
+      <div class="mt-8 rounded-xl border border-gold/30 bg-white/60 p-6 max-w-4xl shadow-sm">
+        <h3 class="font-display text-xl text-teak mb-2 flex items-center gap-2">👗 {guide.dressCode.title}</h3>
+        <p class="text-sm text-ink/75 mb-4">{guide.dressCode.intro}</p>
+        <div class="space-y-2 mb-4">
+          <p class="text-sm text-green-700 font-medium">{guide.dressCode.allowed}</p>
+          <p class="text-sm text-red-700 font-medium">{guide.dressCode.forbidden}</p>
+        </div>
+        <p class="text-sm text-ink/60 italic">{guide.dressCode.tip}</p>
+      </div>
+    )}
+
     <div class="grid md:grid-cols-3 gap-6 mt-10">
       <!-- hours -->
       <div class="rounded-2xl border border-gold/30 bg-white/50 p-6">
@@ -235,7 +260,7 @@ const guideImgs = [
     <div class="mt-14 max-w-3xl">
       <h3 class="font-display text-2xl text-teak mb-5">{guide.faqTitle}</h3>
       <div class="space-y-3">
-        {guide.faqs.map((f) => (
+        {guide.faqs.map((f: { q: string; a: string }) => (
           <details class="group rounded-xl border border-gold/25 bg-white/50 p-4 open:bg-teak/5">
             <summary class="cursor-pointer font-medium text-teak flex justify-between items-center">
               {f.q}
@@ -246,6 +271,14 @@ const guideImgs = [
         ))}
       </div>
     </div>
+
+    <!-- Hidden Gem -->
+    {guide.hiddenGem && (
+      <div class="mt-14 rounded-2xl border border-indigo-200 bg-indigo-50/50 p-6 max-w-4xl shadow-sm">
+        <h3 class="font-display text-xl text-indigo-900 font-semibold">{guide.hiddenGem.title}</h3>
+        <p class="mt-2 text-sm text-indigo-900/80 leading-relaxed">{guide.hiddenGem.text}</p>
+      </div>
+    )}
 
     <!-- Nearby attractions -->
     {guide.nearby && (
