@@ -211,9 +211,10 @@
       "tag": "🚆",
       "title": "Getting there",
       "items": [
+        { "title": "From BKK/DMK Airports", "desc": "Private transfer or taxi is recommended. About 45 minutes from Don Mueang (DMK), and 1.5 hours from Suvarnabhumi (BKK)." },
         { "title": "Train from Bangkok", "desc": "Regular trains to Bang Pa-in station (~1 hr); then a short tuk-tuk or bicycle ride." },
         { "title": "Car / taxi", "desc": "About 60–75 min via the Phahonyothin / Asian Highway from Bangkok." },
-        { "title": "From Ayutthaya", "desc": "15–20 min by car, songthaew or organised tour; many visitors combine both." }
+        { "title": "From Ayutthaya", "desc": "15–20 minutes by car, songthaew or tour; most visitors combine the two." }
       ]
     },
     "photography": {
