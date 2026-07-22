@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "title": "Bang Pa-In Palace (พระราชวังบางปะอิน) — Royal Summer Palace Guide | Ayutthaya",
+    "description": "A complete visitor guide to Bang Pa-In Palace, the Thai royal summer palace in Ayutthaya: history, architecture, opening hours, tickets, how to get there, photography spots and travel tips."
+  },
+  "header": {
+    "home": "Home",
+    "about": "Overview",
+    "history": "History",
+    "guide": "Visit",
+    "food": "Dining",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "map": "Map"
+  },
+  "hero": {
+    "eyebrow": "Royal Summer Palace · Ayutthaya",
+    "titleMain": "Bang Pa-In Palace",
+    "titleAccent": "Palace",
+    "subtitle": "A riverside royal retreat where Thai, Chinese and European architecture meet — pavilions, gardens and a throne hall floating on a lotus pond.",
+    "rating": "4.5",
+    "reviewCount": "7,742",
+    "coordsLabel": "Bang Pa-in, Phra Nakhon Si Ayutthaya",
+    "cta1": "Plan your visit",
+    "cta2": "Where to eat",
+    "viewLocation": "View location on Google Maps →",
+    "boardCategory": "Royal Palace",
+    "boardTitle": "Bang Pa-In",
+    "boardEn": "Summer Palace of the Kings of Siam",
+    "ngoBadge": "Independent NGO Guide | 100% Ad-Free",
+    "plannerTitle": "Golden Hour Planner",
+    "liveWeather": "Live · Open-Meteo",
+    "plannerNote": "Based on the palace's real coordinates",
+    "defaultTemp": "32°",
+    "defaultCond": "Partly cloudy",
+    "defaultWind": "9 km/h",
+    "sunsetIndexLabel": "Sunset Index",
+    "sunsetIndexDefault": "☀️ Clear · Golden-light chance 85%",
+    "goldenHourLabel": "Golden hour",
+    "sunsetLabel": "Sunset",
+    "blueHourLabel": "Blue hour",
+    "crowdWarningLabel": "Tip",
+    "defaultTip": "Mornings are calm",
+    "defaultGolden": "06:10 – 07:40",
+    "defaultSunset": "18:25",
+    "defaultBlue": "18:45 – 19:15",
+    "lightCaption": "Sunrise/sunset times update live with the palace's location.",
+    "goldenChanceLabel": "Golden-light chance",
+    "weatherError": ""
+  },
+  "about": {
+    "label": "Overview",
+    "heading": "A riverside dream of three worlds",
+    "lead": "Bang Pa-In Palace is the former summer residence of the kings of Siam, set on an island in the Chao Phraya River about 60 km north of Bangkok.",
+    "paragraph1": "First built in 1632 by King Prasat Thong and abandoned for two centuries, the palace was revived by King Mongkut and transformed into a dazzling royal retreat by King Chulalongkorn (Rama V) in the 1870s–80s.",
+    "paragraph2": "Today its grounds blend Thai, Chinese and European styles — from a glittering throne hall on a pond to a Chinese mansion and an Italianate lookout tower — making it one of the most photogenic royal sites in Thailand.",
+    "quote": "Here the East and the West bow to the same river.",
+    "quoteAuthor": "— often said of Bang Pa-In's gardens",
+    "stats": [
+      { "value": "1632", "label": "First built" },
+      { "value": "19th c.", "label": "Golden age (Rama V)" },
+      { "value": "~60 km", "label": "From Bangkok" }
+    ],
+    "highlights": [
+      { "tag": "★", "title": "Aisawan Thiphya-Art", "desc": "The iconic Thai throne hall floating in a lotus pond." },
+      { "tag": "❖", "title": "Three styles, one garden", "desc": "Thai, Chinese and European pavilions side by side." },
+      { "tag": "✿", "title": "Riverside gardens", "desc": "Topiary, fountains and shaded promenades by the Chao Phraya." }
+    ],
+    "editorTip": {
+      "tag": "Editor's tip",
+      "text": "Go on a weekday morning: the light on the pond is soft, the crowds are thin, and you can photograph the throne hall without people in the frame.",
+      "ctaLabel": "See the full plan"
+    }
+  },
+  "eco": {
+    "label": "Architecture & Gardens",
+    "heading": "A showcase of three architectures",
+    "quote": "Every pavilion here was a diplomatic gesture as much as a dwelling.",
+    "intro": "King Chulalongkorn invited Siamese craftsmen, Chinese merchants and European engineers to build together, so the palace reads like a short history of world architecture condensed onto one island.",
+    "microTitle": "Architectural styles",
+    "micro": [
+      { "title": "Thai (Rattanakosin)", "desc": "Gabled roofs, mother-of-pearl inlay and the Aisawan Throne Hall's classical proportions." },
+      { "title": "Chinese", "desc": "The Wehart Chamrun mansion, a two-storey teak-and-brick gift from overseas Chinese merchants." },
+      { "title": "European", "desc": "Neo-classical and Neo-Renaissance halls, an Italianate lookout tower and marble busts." }
+    ],
+    "plantsTitle": "Gardens & grounds",
+    "plants": [
+      {
+        "title": "The central pond",
+        "desc": "A rectangular reflecting pool with the Aisawan hall at its heart and lotus beds around it.",
+        "items": [
+          { "name": "Lotus & water lilies", "desc": "Best in the cool morning; the pond mirrors the hall at sunrise." },
+          { "name": "Topiary & lawns", "desc": "European-style clipped hedges frame the Thai and Chinese buildings." }
+        ]
+      },
+      {
+        "title": "Riverside promenade",
+        "desc": "A tree-lined walk along the Chao Phraya with benches and photo terraces.",
+        "items": [
+          { "name": "Fountains & urns", "desc": "Italianate fountains and glazed jars echo the European wings." },
+          { "name": "Royal boat pavilion", "desc": "The Saphakhanigarat hall shelters replica royal barges." }
+        ]
+      }
+    ],
+    "wildlifeTitle": "Statues & monuments",
+    "wildlife": [
+      "Equestrian statue of King Chulalongkorn at the entrance.",
+      "Memorial to Queen Sunanda Kumariratana by the lakeside garden.",
+      "Ho Hem Montian Thewarat, a pavilion honouring King Prasat Thong.",
+      "Marble plaques and European busts scattered through the grounds."
+    ],
+    "lntTitle": "Visitor etiquette",
+    "lntIntro": "As a working royal site, the palace asks for respectful conduct.",
+    "lnt": [
+      "Dress modestly: cover shoulders and knees; no sleeveless tops or shorts.",
+      "Remove shoes before entering pavilions and throne halls.",
+      "Do not touch, lean on or climb the statues and railings.",
+      "Drones and professional tripods require advance permission.",
+      "Keep voices low near memorial pavilions."
+    ],
+    "lntCheckHint": "A sarong loan is available at the entrance if needed.",
+    "checklist": {
+      "title": "Must-see pavilions",
+      "intro": "Tick them off as you walk the island loop (about 1.5 km).",
+      "items": [
+        { "emoji": "🛕", "name": "Aisawan Thiphya-Art", "best": "Best light: 08:00–09:30", "rare": "The palace's signature photo", "rareClass": "normal" },
+        { "emoji": "🏯", "name": "Wehart Chamrun (Chinese mansion)", "best": "Interior: 09:00–11:00", "rare": "Chinese rising-dragon stair", "rareClass": "normal" },
+        { "emoji": "🗼", "name": "Withun Thatsana lookout tower", "best": "Climb: before 10:00", "rare": "360° river view", "rareClass": "normal" },
+        { "emoji": "⛲", "name": "Warophat Phiman hall", "best": "Shaded: midday", "rare": "Rama V's reception rooms", "rareClass": "normal" },
+        { "emoji": "🌉", "name": "Uthayan Phumisathian", "best": "Golden hour", "rare": "Neo-Renaissance island pavilion", "rareClass": "normal" }
+      ]
+    }
+  },
+  "history": {
+    "label": "History",
+    "heading": "Four centuries by the river",
+    "intro": "From a 17th-century hunting lodge to the beloved summer court of Siam's modernising king.",
+    "blocks": [
+      { "title": "1632 — A royal birthplace", "text": "King Prasat Thong founded Bang Pa-In on the site of his childhood home, naming it after 'Bang Phra In' (the village of the god Indra)." },
+      { "title": "Abandonment", "text": "After the fall of Ayutthaya in 1767 the palace fell into ruin and was left untouched for almost a century." },
+      { "title": "1872–1889 — Rama V's golden age", "text": "King Chulalongkorn rebuilt it as his summer seat, inviting Thai, Chinese and European builders to create the eclectic pavilions seen today." }
+    ],
+    "legend": {
+      "title": "The name",
+      "text": "'Bang Pa-In' is popularly read as 'the village of Lord Indra' — a poetic nod to the mythical king of the gods who, legend says, once dwelt here."
+    },
+    "didYouKnow": {
+      "title": "Did you know?",
+      "text": "King Chulalongkorn spent so much time at Bang Pa-In that he received foreign ambassadors here and even kept a private zoo and aquarium on the grounds."
+    },
+    "folklore": {
+      "title": "The queen and the river",
+      "tale": "In 1880 Queen Sunanda Kumariratana and her infant daughter drowned when their royal barge capsized near the palace. The king was said to have forbidden anyone to touch the queen as she struggled — under the law, commoners laying hands on royalty could be punished — and he never forgot the tragedy. A lakeside memorial still honours her.",
+      "shrineTitle": "The memorial",
+      "shrine": "Near the water you'll find a marble memorial and statue of Queen Sunanda, a quiet corner where visitors still pause. It is one of the most poignant stories tied to the palace."
+    }
+  },
+  "guide": {
+    "label": "Plan your visit",
+    "heading": "Everything you need before you go",
+    "lead": "Opening hours, tickets, how to get there, what to wear and where to point your camera.",
+    "twoZone": {
+      "title": "Suggested itineraries",
+      "intro": "The island loop is compact — pick a pace that suits you.",
+      "difficultyLabel": "Duration",
+      "suitsLabel": "Best for",
+      "items": [
+        { "name": "Classic highlights (2 hours)", "difficulty": "~2 hrs", "note": "Half loop", "suits": "First-time visitors", "desc": "Entrance → Aisawan hall → Wehart Chamrun → lookout tower → gardens → exit." },
+        { "name": "In-depth half-day (4 hours)", "difficulty": "~4 hrs", "note": "Full loop + rest", "suits": "Photographers & history lovers", "desc": "Add the memorial pavilions, Warophat Phiman interiors and a riverside coffee break." }
+      ]
+    },
+    "scamTip": {
+      "tag": "⚠ Arrival & Transport Tip",
+      "text": "Buy tickets only at the official booth inside the main gate. Ignore touts outside offering 'combined' or 'VIP' tickets. Standard tuk-tuk fare from Ayutthaya train station to the palace is around 40-50 THB. Beware of drivers claiming the palace is 'closed today for a royal ceremony/renovation' to offer alternative tours — always check at the official gate."
+    },
+    "hours": {
+      "tag": "🕗",
+      "time": "08:00 – 16:00 (last entry 15:30)",
+      "items": [
+        { "label": "Tuesday – Sunday", "value": "Open" },
+        { "label": "Monday", "value": "Closed" },
+        { "label": "Last entry", "value": "15:30" }
+      ]
+    },
+    "fees": {
+      "tag": "🎟️",
+      "title": "Admission",
+      "items": [
+        { "title": "Foreign adults", "desc": "100 THB (includes the grounds and pavilions)." },
+        { "title": "Thai nationals", "desc": "Free entry with ID." },
+        { "title": "Camera / dress", "desc": "No extra camera fee; sarong loan free at the gate." }
+      ]
+    },
+    "transport": {
+      "tag": "🚆",
+      "title": "Getting there",
+      "items": [
+        { "title": "Train from Bangkok", "desc": "Regular trains to Bang Pa-in station (~1 hr); then a short tuk-tuk or bicycle ride." },
+        { "title": "Car / taxi", "desc": "About 60–75 min via the Phahonyothin / Asian Highway from Bangkok." },
+        { "title": "From Ayutthaya", "desc": "15–20 min by car, songthaew or organised tour; many visitors combine both." }
+      ]
+    },
+    "photography": {
+      "title": "Photography guide",
+      "intro": "The whole island is photogenic; these are the standout frames.",
+      "timesTitle": "Best light",
+      "times": [
+        { "period": "Morning 08–10", "desc": "Soft light, calm pond, few visitors — ideal for the Aisawan hall." },
+        { "period": "Golden hour 17–18", "desc": "Warm light on the European wings and the bridge." },
+        { "period": "Overcast", "desc": "Even, shadow-free light that suits architecture details." }
+      ],
+      "spotsTitle": "Photo spots",
+      "spots": [
+        { "name": "Aisawan hall from the bridge", "view": "Symmetrical reflection in the pond", "tip": "Use a low angle and a 24–35 mm lens." },
+        { "name": "Withun Thatsana tower", "view": "360° of the river and gardens", "tip": "Shoot the staircase spiral from below." },
+        { "name": "Uthayan Phumisathian terrace", "view": "Neo-Renaissance pavilion at sunset", "tip": "Backlight the arches at golden hour." }
+      ],
+      "settingsTitle": "Camera & phone",
+      "settings": [
+        { "style": "Architecture", "camera": "f/8, ISO 100, 16–35 mm", "phone": "0.5× wide, tap to expose the sky" },
+        { "style": "Reflection", "camera": "Polariser, tripod at water level", "phone": "Lie low; use night/long-exposure for dusk" },
+        { "style": "Portrait with pavilion", "camera": "85 mm, f/2.8", "phone": "Portrait mode, blur the gardens" }
+      ],
+      "cameraLabel": "Camera:",
+      "phoneLabel": "Phone:",
+      "viewLabel": "View:",
+      "tipLabel": "Tip:",
+      "tipsTitle": "Quick tips",
+      "tips": [
+        "Arrive at opening for empty reflections.",
+        "A polariser kills glare on the pond.",
+        "Drones are not allowed without permission."
+      ]
+    },
+    "bestTime": {
+      "title": "Best time to visit",
+      "intro": "Ayutthaya has three clear seasons; the palace is open year-round except Mondays.",
+      "seasons": [
+        { "tag": "❄️", "months": "Nov – Feb", "name": "Cool & dry (best)", "desc": "25–32°C, low humidity — the most comfortable months to walk the gardens." },
+        { "tag": "🌧️", "months": "Jun – Oct", "name": "Green season", "desc": "Lush gardens after afternoon showers; bring a compact umbrella." },
+        { "tag": "🔥", "months": "Mar – May", "name": "Hot season", "desc": "35–40°C at midday — visit early, hydrate, and use the shaded paths." }
+      ]
+    },
+    "safety": {
+      "title": "Stay comfortable & safe",
+      "items": [
+        { "title": "Heat", "desc": "Carry water; the open gardens offer little shade at midday." },
+        { "title": "Footwear", "desc": "You'll remove shoes often — slip-ons save time." },
+        { "title": "River edge", "desc": "Keep children away from the unfenced pond and river banks." }
+      ]
+    },
+    "hazeSeason": {
+      "tag": "🌡️ Heat & rain note",
+      "text": "March–May is very hot; June–October brings short afternoon storms. Mornings are best in every season, and the palace closes on Mondays regardless of weather."
+    },
+    "emergency": {
+      "title": "Helpful numbers",
+      "intro": "Save these before you travel.",
+      "items": [
+        { "title": "Tourist Police", "value": "1155" },
+        { "title": "Ambulance", "value": "1669" },
+        { "title": "Bang Pa-in info", "value": "+66 35 261 548" }
+      ]
+    },
+    "accessibility": {
+      "title": "Family & accessibility",
+      "intro": "The palace is stroller- and wheelchair-friendly on the main loop.",
+      "items": [
+        { "title": "Paths", "desc": "Paved, mostly flat routes around the island." },
+        { "title": "Rest areas", "desc": "Shaded benches and a café near the entrance." },
+        { "title": "Loan items", "desc": "Wheelchairs and sarongs available at the gate." }
+      ]
+    },
+    "faqTitle": "Frequently asked questions",
+    "faqs": [
+      { "q": "Is Bang Pa-In Palace open on Mondays?", "a": "No. It is closed every Monday and on some royal holidays; plan a Tuesday–Sunday visit." },
+      { "q": "How much is the entrance fee?", "a": "100 THB for foreign adults; Thai nationals enter free with ID. There is no separate camera fee." },
+      { "q": "What should I wear?", "a": "Modest clothing covering shoulders and knees, as it is an active royal site. Sarongs are loaned free at the entrance." },
+      { "q": "How long do I need?", "a": "About 2 hours for the highlights, or 4 hours for a relaxed, in-depth visit." },
+      { "q": "Can I fly a drone?", "a": "Only with advance permission from the palace; recreational drones are generally not allowed." }
+    ],
+    "nearby": {
+      "title": "Nearby in Ayutthaya",
+      "cta": "Explore →",
+      "items": [
+        { "name": "Ayutthaya Historical Park", "desc": "UNESCO ruins 20 minutes away.", "url": "https://whc.unesco.org/en/list/576" },
+        { "name": "Wat Chaiwatthanaram", "desc": "Riverside temple with iconic prang towers.", "url": "https://en.wikipedia.org/wiki/Wat_Chaiwatthanaram" },
+        { "name": "Bang Sai Arts Centre", "desc": "Royal folk-arts & crafts village nearby.", "url": "https://www.tourismthailand.org/Attraction/bang-sai-royal-folk-arts-and-crafts-centre" }
+      ]
+    }
+  },
+  "food": {
+    "label": "Dining nearby",
+    "heading": "Eat by the river",
+    "lead": "There is no restaurant inside the palace, but Bang Pa-in town and the riverbank are full of easy, local eats.",
+    "dishes": [
+      { "tag": "🍜", "name": "Riverside Thai food", "price": "฿80–150", "desc": "Family restaurants near the gate serve pad thai, curries and fresh river fish." },
+      { "tag": "🍧", "name": "Coconut ice cream & snacks", "price": "฿30–60", "desc": "Cart vendors by the entrance — perfect after a hot walk." },
+      { "tag": "☕", "name": "Café & drinks", "price": "฿60–120", "desc": "A few air-conditioned cafés near the parking for a shaded break." },
+      { "tag": "🍲", "name": "Boat-noodle bowls", "price": "฿40–80", "desc": "Small, flavourful bowls popular with Thai day-trippers." }
+    ],
+    "quote": { "text": "A cold coconut after the midday sun is the real palace secret.", "author": "— a regular visitor" }
+  },
+  "gallery": {
+    "label": "Gallery",
+    "heading": "Bang Pa-In in pictures",
+    "intro": "A walk through the pavilions, the pond and the gardens — from the gilded throne hall to the quiet memorials.",
+    "historicalNote": "Images shown are representative placeholders pending licensed photography of the palace.",
+    "credits": "Photos: placeholder set (to be replaced with licensed Bang Pa-In Palace images before launch).",
+    "alts": [
+      "Aisawan Thiphya-Art throne hall on the pond",
+      "Reflection of the throne hall in the lotus pond",
+      "Wehart Chamrun Chinese mansion exterior",
+      "Chinese dragon staircase at Wehart Chamrun",
+      "Withun Thatsana lookout tower",
+      "Warophat Phiman European-style hall",
+      "Uthayan Phumisathian island pavilion",
+      "Riverside gardens and topiary",
+      "Marble fountain in the European garden",
+      "Equestrian statue of King Chulalongkorn",
+      "Memorial to Queen Sunanda by the lake",
+      "Ho Hem Montian Thewarat pavilion",
+      "Saphakhanigarat royal boat pavilion",
+      "Ornate gable and mother-of-pearl inlay",
+      "Bridge across the palace pond",
+      "Lotus flowers in the reflecting pool",
+      "Shaded promenade along the Chao Phraya",
+      "European-style urns and hedges",
+      "Interior of the Chinese mansion",
+      "Garden path between pavilions"
+    ],
+    "viewLocation": "View location on Google Maps →"
+  },
+  "reviews": {
+    "label": "Reviews",
+    "heading": "What visitors say",
+    "intro": "Bang Pa-In Palace holds a 4.5/5 rating across thousands of Google reviews.",
+    "disclaimer": "Aggregated from public Google reviews for reference.",
+    "declaration": "We are an independent, non-profit guide and are not affiliated with the palace or Google.",
+    "featured": [
+      { "text": "Easily one of the most beautiful palaces near Bangkok — the floating throne hall is unreal.", "source": "— Trip via Google" },
+      { "text": "Come early, wear light clothes, and take your time in the gardens. Worth every baht.", "source": "— Trip via Google" }
+    ],
+    "items": [
+      { "text": "The Aisawan Throne Hall at 9am with the pond reflection is postcard-perfect.", "name": "Anong S.", "date": "2026-01", "rating": "5" },
+      { "text": "Loved the mix of Thai, Chinese and European buildings — like three palaces in one.", "name": "Tom B.", "date": "2025-12", "rating": "5" },
+      { "text": "Quiet on a Tuesday morning; we had the bridge to ourselves for photos.", "name": "Pim V.", "date": "2025-11", "rating": "5" },
+      { "text": "Wear light clothes — it gets hot by noon, but the gardens are shaded and lovely.", "name": "Jira W.", "date": "2025-10", "rating": "4" },
+      { "text": "The memorial to Queen Sunanda is moving; take a moment there.", "name": "Ken R.", "date": "2025-09", "rating": "5" },
+      { "text": "Easy half-day trip from Bangkok by train, then a short tuk-tuk to the gate.", "name": "Mai L.", "date": "2025-08", "rating": "5" },
+      { "text": "Beautiful but go early — by midday the light is harsh and it's busy.", "name": "Oil T.", "date": "2025-07", "rating": "4" },
+      { "text": "The Chinese mansion interior and the lookout tower view were the highlights for us.", "name": "Ning C.", "date": "2025-06", "rating": "5" }
+    ],
+    "viewLocation": "View location on Google Maps →"
+  },
+  "sources": {
+    "label": "Sources & corrections",
+    "heading": "Our sources",
+    "intro": "This guide is compiled from public, authoritative references. We are an independent, non-profit project and do not sell tickets.",
+    "photoTitle": "Images",
+    "photoItems": [
+      { "text": "Gallery images are placeholders pending licensed photography of the palace.", "url": "", "linkLabel": "" }
+    ],
+    "factTitle": "Facts",
+    "factText": "Opening hours, fees and contact details follow the palace's official announcements and may change on royal holidays.",
+    "correctionTitle": "Found a mistake?",
+    "correctionText": "We welcome corrections from visitors and locals. If something is outdated, please let us know.",
+    "correctionMailto": "mailto:hello@bangpainpalace.com",
+    "correctionCta": "Email a correction",
+    "copyright": "© 2026 Bang Pa-In Palace Guide. Non-profit visitor guide."
+  },
+  "mapSection": {
+    "label": "Location",
+    "heading": "How to find Bang Pa-In Palace",
+    "lead": "On an island in the Chao Phraya River, Bang Pa-in District, Phra Nakhon Si Ayutthaya Province.",
+    "stats": [
+      { "tag": "🚆", "value": "~1 hr", "sub": "Train from Bangkok" },
+      { "tag": "🚗", "value": "~60 km", "sub": "North of Bangkok" },
+      { "tag": "🗺️", "value": "6HJH+33", "sub": "Plus Code" }
+    ],
+    "address": "Ban Len, Bang Pa-in District, Phra Nakhon Si Ayutthaya 13160, Thailand",
+    "plusCode": "6HJH+33 Ban Len, Bang Pa-in District, Phra Nakhon Si Ayutthaya, Thailand",
+    "coords": "14.2302° N, 100.5751° E"
+  },
+  "footer": {
+    "brand": { "name": "Bang Pa-In Palace", "tagline": "Royal Summer Palace · Ayutthaya" },
+    "about": "An independent, non-profit visitor guide to the Thai royal summer palace in Ayutthaya — its history, architecture and how to visit.",
+    "navTitle": "Sections",
+    "navItems": [
+      { "href": "#about", "label": "Overview" },
+      { "href": "#history", "label": "History" },
+      { "href": "#guide", "label": "Visit" },
+      { "href": "#food", "label": "Dining" },
+      { "href": "#gallery", "label": "Gallery" },
+      { "href": "#reviews", "label": "Reviews" },
+      { "href": "#map", "label": "Map" }
+    ],
+    "noteTitle": "A note on this guide",
+    "note": "We are an independent, non-profit project. This site is not the official palace website and is not affiliated with the Royal Household or Google.",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "Sources",
+    "sourcesNote": "Compiled from public tourism references.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "legal": {
+      "cookies": {
+        "title": "Cookie Settings",
+        "updated": "Updated 2026",
+        "intro": "We use a minimal set of cookies to remember your language and preferences and to understand anonymous traffic. We do not sell personal data.",
+        "categories": [
+          { "h": "Essential", "status": "Always on", "p": "Required for the site to function, such as remembering your chosen language.", "sub": "Cannot be disabled", "subStatus": "Stored on your device" },
+          { "h": "Analytics", "status": "On", "p": "Anonymous, aggregated statistics that help us improve the guide.", "sub": "Anonymous", "subStatus": "Auto-expires" },
+          { "h": "Marketing", "status": "Off", "p": "We currently use none. If this changes, we will ask for consent first.", "sub": "Not used", "subStatus": "—" }
+        ],
+        "consent": "By continuing to browse, you accept our use of essential cookies."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "updated": "Updated 2026",
+        "intro": "This non-profit guide respects your privacy. We collect only what is needed to operate the site and improve your experience.",
+        "sections": [
+          { "h": "What we collect", "p": "Anonymous usage data (pages visited, language, approximate region) via privacy-friendly analytics." },
+          { "h": "What we do not do", "p": "We do not sell, rent, or share personal data, and we do not run third-party advertising trackers." },
+          { "h": "Your choices", "p": "You can disable analytics cookies at any time using the cookie settings, and request removal of any data you believe we hold." },
+          { "h": "Contact", "p": "Questions about privacy can be sent to hello@bangpainpalace.com." }
+        ]
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "updated": "Updated 2026",
+        "intro": "This is an independent, non-profit visitor guide. By using the site you agree to the following simple terms.",
+        "sections": [
+          { "h": "Informational only", "p": "All content is provided for general travel information and may change without notice. Always confirm opening hours and fees with official sources before you travel." },
+          { "h": "Not official", "p": "We are not affiliated with the Royal Household, the palace administration, or Google. Names, photos and facts belong to their respective owners." },
+          { "h": "External links", "p": "Links to third-party sites are provided for convenience; we are not responsible for their content." },
+          { "h": "Liability", "p": "We are not liable for any loss or inconvenience arising from use of this guide." }
+        ]
+      }
+    },
+    "disclaimerLead": "Unofficial, non-profit visitor guide.",
+    "unofficial": "Not affiliated with the Royal Household or Google.",
+    "dataSource": "Weather data: Open-Meteo. Map: Google Maps.",
+    "copyright": "© 2026 Bang Pa-In Palace Guide. Non-profit visitor guide."
+  }
+}

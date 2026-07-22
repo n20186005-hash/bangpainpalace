@@ -1,0 +1,446 @@
+{
+  "meta": {
+    "title": "邦巴因王宫（พระราชวังบางปะอิน）— 皇家夏宫游玩指南 | 大城府",
+    "description": "邦巴因王宫（班帕因行宫）完整游客指南：位于大城府的泰国皇家夏宫，含历史沿革、建筑风格、开放时间、门票、交通方式、摄影机位与旅行贴士。"
+  },
+  "header": {
+    "home": "首页",
+    "about": "概况",
+    "history": "历史",
+    "guide": "游玩",
+    "food": "餐饮",
+    "gallery": "图集",
+    "reviews": "评价",
+    "map": "地图"
+  },
+  "hero": {
+    "eyebrow": "皇家夏宫 · 大城府",
+    "titleMain": "邦巴因王宫",
+    "titleAccent": "王宫",
+    "subtitle": "一座融汇泰式、中式与欧式建筑的河畔行宫——亭台、花园，以及一座漂浮在莲花池上的金碧大殿。",
+    "rating": "4.5",
+    "reviewCount": "7,742",
+    "coordsLabel": "大城府 邦巴因县",
+    "cta1": "规划行程",
+    "cta2": "周边美食",
+    "viewLocation": "在 Google 地图上查看位置 →",
+    "boardCategory": "皇家宫殿",
+    "boardTitle": "邦巴因",
+    "boardEn": "暹罗国王的夏宫",
+    "ngoBadge": "独立非盈利指南 | 100% 无广告",
+    "plannerTitle": "黄昏摄影规划",
+    "liveWeather": "实时 · Open-Meteo",
+    "plannerNote": "依据王宫真实坐标计算",
+    "defaultTemp": "32°",
+    "defaultCond": "局部多云",
+    "defaultWind": "9 公里/时",
+    "sunsetIndexLabel": "日落指数",
+    "sunsetIndexDefault": "☀️ 晴朗 · 黄金光线概率 85%",
+    "goldenHourLabel": "黄金时刻",
+    "sunsetLabel": "日落",
+    "blueHourLabel": "蓝调时刻",
+    "crowdWarningLabel": "提示",
+    "defaultTip": "清晨更清静",
+    "defaultGolden": "06:10 – 07:40",
+    "defaultSunset": "18:25",
+    "defaultBlue": "18:45 – 19:15",
+    "lightCaption": "日出/日落时间会随王宫所在地实时更新。",
+    "goldenChanceLabel": "黄金光线概率",
+    "weatherError": ""
+  },
+  "about": {
+    "label": "概况",
+    "heading": "三界交融的河畔之梦",
+    "lead": "邦巴因王宫是暹罗国王昔日的避暑行宫，坐落于昭披耶河中的一座小岛上，距曼谷约 60 公里。",
+    "paragraph1": "该宫始建于 1632 年巴萨通王时期，荒废两百年后，由蒙固王（拉玛四世）重拾旧梦，并在朱拉隆功王（拉玛五世）治下的 1870–1880 年代扩建为华美行宫。",
+    "paragraph2": "如今园内融合泰式、中式与欧式风格——从池中金殿、中式宅邸到意式瞭望塔，使其成为泰国最具人像美感的皇家胜地之一。",
+    "quote": "在这里，东方与西方向同一条河流致意。",
+    "quoteAuthor": "— 常有人如此形容邦巴因的花园",
+    "stats": [
+      { "value": "1632", "label": "始建年份" },
+      { "value": "19 世纪", "label": "黄金时代（拉玛五世）" },
+      { "value": "约 60 公里", "label": "距曼谷" }
+    ],
+    "highlights": [
+      { "tag": "★", "title": "爱沙湾提帕雅殿 [Aisawan Thiphya-Art]", "desc": "漂浮在莲花池中的标志性泰式金殿。" },
+      { "tag": "❖", "title": "三式同园", "desc": "泰式、中式与欧式殿宇比邻而立。" },
+      { "tag": "✿", "title": "河畔花园", "desc": "修剪整齐的绿篱、喷泉与昭披耶河畔的林荫步道。" }
+    ],
+    "editorTip": {
+      "tag": "编辑提示",
+      "text": "选工作日的清晨前往：池中光线柔和、游人稀少，可拍到无人遮挡的金殿倒影。",
+      "ctaLabel": "查看完整方案"
+    }
+  },
+  "eco": {
+    "label": "建筑与园林",
+    "heading": "三种建筑风格的博览",
+    "quote": "这里的每一座殿宇，既是外交的姿态，也是居所。",
+    "intro": "朱拉隆功王邀请暹罗工匠、华人商贾与欧洲工程师共同营建，使整座王宫宛如一部被浓缩于一座小岛上的世界建筑简史。",
+    "microTitle": "建筑风格",
+    "micro": [
+      { "title": "泰式（拉达纳哥欣）", "desc": "山形屋顶、珍珠母贝镶嵌，以及爱沙湾提帕雅殿 [Aisawan Thiphya-Art] 的古典比例。" },
+      { "title": "中式", "desc": "威哈乍伦 [Wehart Chamrun] ——海外华人商贾赠献的两层柚木与砖砌建筑。" },
+      { "title": "欧式", "desc": "新古典与新文艺复兴风格的殿宇、意式瞭望塔，以及大理石胸像。" }
+    ],
+    "plantsTitle": "花园与庭园",
+    "plants": [
+      {
+        "title": "中央莲池",
+        "desc": "一方矩形倒影池，爱沙湾提帕雅殿 [Aisawan Thiphya-Art] 居于池心，四周环以莲塘。",
+        "items": [
+          { "name": "莲花与水睡莲", "desc": "清晨最盛；日出时池面映出大殿倒影。" },
+          { "name": "绿篱与草坪", "desc": "欧式修剪绿篱框住泰式与中式建筑。" }
+        ]
+      },
+      {
+        "title": "河畔步道",
+        "desc": "沿昭披耶河、设有长椅与摄影平台的林荫步道。",
+        "items": [
+          { "name": "喷泉与陶瓮", "desc": "意式喷泉与上釉陶瓮呼应欧式侧翼。" },
+          { "name": "皇家船艇殿", "desc": "沙帕卡尼卡拉殿 [Saphakhanigarat] 内陈列着御用龙舟复制品。" }
+        ]
+      }
+    ],
+    "wildlifeTitle": "雕像与纪念碑",
+    "wildlife": [
+      "入口处朱拉隆功王骑马铜像。",
+      "湖畔苏南达王后 [Queen Sunanda] 纪念碑。",
+      "赫姆蒙提安提瓦拉殿 [Ho Hem Montian Thewarat]，纪念巴萨通王。",
+      "散布园中的大理石铭牌与欧式胸像。"
+    ],
+    "lntTitle": "参观礼仪",
+    "lntIntro": "作为仍在使用中的皇家场所，敬请遵守礼仪。",
+    "lnt": [
+      "衣着端庄：遮肩盖膝，勿穿无袖上衣或短裤。",
+      "进入殿宇与大殿前请脱鞋。",
+      "请勿触摸、倚靠或攀爬雕像与栏杆。",
+      "无人机与专业三脚架需事先申请许可。",
+      "在纪念殿附近请放低音量。"
+    ],
+    "lntCheckHint": "入口处可免费借用纱笼裙。",
+    "checklist": {
+      "title": "必看殿宇",
+      "intro": "沿环岛步道（约 1.5 公里）逐一打卡。",
+      "items": [
+        { "emoji": "🛕", "name": "爱沙湾提帕雅殿 [Aisawan Thiphya-Art]", "best": "最佳光线：08:00–09:30", "rare": "王宫标志性取景", "rareClass": "normal" },
+        { "emoji": "🏯", "name": "威哈乍伦 [Wehart Chamrun]（中式宅邸）", "best": "内部：09:00–11:00", "rare": "盘龙中式楼梯", "rareClass": "normal" },
+        { "emoji": "🗼", "name": "维图塔萨纳瞭望塔 [Withun Thatsana]", "best": "登塔：10:00 前", "rare": "360° 河景", "rareClass": "normal" },
+        { "emoji": "⛲", "name": "瓦罗帕披曼殿 [Warophat Phiman]", "best": "遮阴：正午", "rare": "拉玛五世接见厅", "rareClass": "normal" },
+        { "emoji": "🌉", "name": "乌泰亚蓬米萨坦 [Uthayan Phumisathian]", "best": "黄金时刻", "rare": "新文艺复兴式岛殿", "rareClass": "normal" }
+      ]
+    }
+  },
+  "history": {
+    "label": "历史",
+    "heading": "河畔四百年",
+    "intro": "从 17 世纪的狩猎行宫，到暹罗现代化君主钟爱的夏宫。",
+    "blocks": [
+      { "title": "1632 — 国王的诞生地", "text": "巴萨通王在其幼年故居旧址上兴建邦巴因，并依“邦帕因”（因陀罗神之村）命名。" },
+      { "title": "遗弃", "text": "1767 年阿瑜陀耶陷落后，王宫化为废墟，近乎百年无人问津。" },
+      { "title": "1872–1889 — 拉玛五世黄金时代", "text": "朱拉隆功王将其重建为夏宫，邀泰国、中国与欧洲匠人共同营造出今日所见多元殿宇。" }
+    ],
+    "legend": {
+      "title": "名称由来",
+      "text": "“邦巴因”通常被解读为“因陀罗神之村”——诗意地暗指传说中曾居于此地的天帝。" }
+    ,
+    "didYouKnow": {
+      "title": "您知道吗？",
+      "text": "朱拉隆功王常驻邦巴因，曾在此接见外国使节，园内甚至饲养过私人动物园与水族馆。"
+    },
+    "folklore": {
+      "title": "王后与河流",
+      "tale": "1880 年，苏南达·库马丽拉塔纳王后 [Queen Sunanda Kumariratana] 与其幼女在邻近王宫的御舟倾覆中溺亡。传说国王曾下令众人在王后挣扎时不得触碰——依律，平民触碰王室可被问罪——而他始终未能忘怀这场悲剧。湖畔的纪念碑至今仍在纪念她。",
+      "shrineTitle": "纪念碑",
+      "shrine": "临水处可见苏南达王后 [Queen Sunanda] 的大理石纪念碑与雕像，是一方游客仍会驻足的静谧角落，也是与王宫相关最令人动容的故事之一。"
+    }
+  },
+  "guide": {
+    "label": "行前规划",
+    "heading": "出发前需要知道的一切",
+    "lead": "开放时间、门票、交通、衣着，以及镜头该对准何处。",
+    "twoZone": {
+      "title": "推荐路线",
+      "intro": "环岛步道紧凑，按适合自己的节奏选择。",
+      "difficultyLabel": "时长",
+      "suitsLabel": "适合",
+      "items": [
+        { "name": "经典精华（2 小时）", "difficulty": "约 2 小时", "note": "半圈", "suits": "初次到访", "desc": "入口 → 爱沙湾提帕雅殿 [Aisawan Thiphya-Art] → 威哈乍伦 [Wehart Chamrun] → 瞭望塔 → 花园 → 离开。" },
+        { "name": "深度半日（4 小时）", "difficulty": "约 4 小时", "note": "整圈 + 休息", "suits": "摄影与历史爱好者", "desc": "加游纪念殿、瓦罗帕披曼殿内部，并在河畔咖啡小憩。" }
+      ]
+    },
+    "scamTip": {
+      "tag": "⚠ 抵达与交通提示",
+      "text": "请仅在大门内的官方窗口购票，勿理会门外兜售“套票”或“VIP 票”的黄牛。从大城火车站至王宫的标准突突车资约为 40-50 泰铢/人。此外，警惕司机谎称“王宫今日有王室活动闭馆/修缮”并试图推销其他包车行程——请务必亲自到官方大门核实开放情况。"
+    },
+    "hours": {
+      "tag": "🕗",
+      "time": "08:00 – 16:00（最晚入场 15:30）",
+      "items": [
+        { "label": "周二 – 周日", "value": "开放" },
+        { "label": "周一", "value": "闭馆" },
+        { "label": "最晚入场", "value": "15:30" }
+      ]
+    },
+    "fees": {
+      "tag": "🎟️",
+      "title": "门票",
+      "items": [
+        { "title": "外国成人", "desc": "100 泰铢（含园区与殿宇）。" },
+        { "title": "泰国公民", "desc": "凭身份证件免费入场。" },
+        { "title": "相机 / 衣着", "desc": "不另收相机费；入口免费借用纱笼裙。" }
+      ]
+    },
+    "transport": {
+      "tag": "🚆",
+      "title": "交通方式",
+      "items": [
+        { "title": "曼谷乘火车", "desc": "有定期火车前往邦巴因站（约 1 小时），再短途搭乘嘟嘟车或自行车。" },
+        { "title": "自驾 / 出租车", "desc": "经帕宏乍能路与亚洲公路，约 60–75 分钟车程。" },
+        { "title": "从大城府出发", "desc": "乘车、双条车或跟团约 15–20 分钟，多数游客将两地一并游览。" }
+      ]
+    },
+    "photography": {
+      "title": "摄影指南",
+      "intro": "整座小岛都适合取景，以下是最出片的机位。",
+      "timesTitle": "最佳光线",
+      "times": [
+        { "period": "清晨 08–10", "desc": "光线柔和、池面平静、游人少——最适合爱沙湾提帕雅殿 [Aisawan Thiphya-Art]。" },
+        { "period": "黄金时刻 17–18", "desc": "暖光洒在欧式侧翼与桥上。" },
+        { "period": "阴天", "desc": "均匀无影，适合表现建筑细节。" }
+      ],
+      "spotsTitle": "摄影机位",
+      "spots": [
+        { "name": "桥上拍爱沙湾殿 [Aisawan Thiphya-Art]", "view": "池中对称倒影", "tip": "低角度，使用 24–35 mm 镜头。" },
+        { "name": "维图塔萨纳瞭望塔 [Withun Thatsana]", "view": "360° 河景与园景", "tip": "从塔下仰拍螺旋楼梯。" },
+        { "name": "乌泰亚蓬米萨坦 [Uthayan Phumisathian] 平台", "view": "黄昏中的新文艺复兴殿", "tip": "黄金时刻以逆光勾勒拱门。" }
+      ],
+      "settingsTitle": "相机与手机",
+      "settings": [
+        { "style": "建筑", "camera": "f/8, ISO 100, 16–35 mm", "phone": "0.5× 广角，点按曝光天空" },
+        { "style": "倒影", "camera": "偏振镜，水面三脚架", "phone": "贴地；黄昏用夜景/长曝" },
+        { "style": "殿前人像", "camera": "85 mm, f/2.8", "phone": "人像模式，虚化花园" }
+      ],
+      "cameraLabel": "相机：",
+      "phoneLabel": "手机：",
+      "viewLabel": "视角：",
+      "tipLabel": "提示：",
+      "tipsTitle": "小贴士",
+      "tips": [
+        "开园即到，可拍空镜倒影。",
+        "偏振镜可消除水面反光。",
+        "未经许可不得飞行无人机。"
+      ]
+    },
+    "bestTime": {
+      "title": "最佳游览时节",
+      "intro": "大城府四季分明，王宫除周一外全年开放。",
+      "seasons": [
+        { "tag": "❄️", "months": "11 月 – 2 月", "name": "凉季干爽（最佳）", "desc": "25–32°C、湿度低——漫步花园最舒适。" },
+        { "tag": "🌧️", "months": "6 月 – 10 月", "name": "绿意季", "desc": "午后阵雨过后园景葱郁，备一把轻便伞。" },
+        { "tag": "🔥", "months": "3 月 – 5 月", "name": "热季", "desc": "正午 35–40°C——早出、补水、走遮阴步道。" }
+      ]
+    },
+    "safety": {
+      "title": "舒适与安全",
+      "items": [
+        { "title": "高温", "desc": "带足饮水；正午开阔花园遮阴少。" },
+        { "title": "鞋履", "desc": "常需脱鞋，便脱的鞋子更省时。" },
+        { "title": "水岸", "desc": "看管好儿童，远离无护栏的池畔与河岸。" }
+      ]
+    },
+    "hazeSeason": {
+      "tag": "🌡️ 高温与降雨提示",
+      "text": "3–5 月酷热；6–10 月多午后短时阵雨。各季节均以清晨为佳，且无论天气如何，周一闭馆。"
+    },
+    "emergency": {
+      "title": "实用电话",
+      "intro": "出行前请存好。",
+      "items": [
+        { "title": "旅游警察", "value": "1155" },
+        { "title": "救护", "value": "1669" },
+        { "title": "邦巴因咨询", "value": "+66 35 261 548" }
+      ]
+    },
+    "accessibility": {
+      "title": "亲子与无障碍",
+      "intro": "主环线对婴儿车与轮椅友好。",
+      "items": [
+        { "title": "步道", "desc": "环绕小岛的铺装路面基本平坦。" },
+        { "title": "休息区", "desc": "入口附近有遮阴长椅与咖啡馆。" },
+        { "title": "借用物品", "desc": "入口可借用轮椅与纱笼裙。" }
+      ]
+    },
+    "faqTitle": "常见问题",
+    "faqs": [
+      { "q": "邦巴因王宫周一开放吗？", "a": "不开放。每周一及部分王室假日闭馆，请安排在周二至周日参观。" },
+      { "q": "门票多少钱？", "a": "外国成人 100 泰铢；泰国公民凭身份证免费。不另收相机费。" },
+      { "q": "该怎么穿？", "a": "作为仍在使用的皇家场所，请衣着端庄遮肩盖膝；入口免费借用纱笼裙。" },
+      { "q": "需要游览多久？", "a": "精华约 2 小时，悠闲深度游约 4 小时。" },
+      { "q": "可以飞无人机吗？", "a": "仅可在事先获王宫许可后飞行；休闲无人机一般不允许。" }
+    ],
+    "nearby": {
+      "title": "大城府周边",
+      "cta": "探索 →",
+      "items": [
+        { "name": "阿瑜陀耶历史公园", "desc": "20 分钟车程的世界遗产遗迹。", "url": "https://whc.unesco.org/en/list/576" },
+        { "name": "柴瓦塔那兰寺", "desc": "河畔高棉式佛塔地标。", "url": "https://zh.wikipedia.org/wiki/柴瓦塔那兰寺" },
+        { "name": "邦赛皇家工艺村", "desc": "邻近的泰式手工艺村落。", "url": "https://www.tourismthailand.org/Attraction/bang-sai-royal-folk-arts-and-crafts-centre" }
+      ]
+    }
+  },
+  "food": {
+    "label": "周边餐饮",
+    "heading": "河畔觅食",
+    "lead": "王宫内部不设餐厅，但邦巴因镇与河岸遍布地道小吃。",
+    "dishes": [
+      { "tag": "🍜", "name": "河畔泰餐", "price": "฿80–150", "desc": "门口家庭餐馆供应泰式炒河粉、咖喱与鲜河鱼。" },
+      { "tag": "🍧", "name": "椰子冰淇淋与小吃", "price": "฿30–60", "desc": "入口处推车小贩，烈日漫步后最解暑。" },
+      { "tag": "☕", "name": "咖啡与饮品", "price": "฿60–120", "desc": "停车场附近几家空调咖啡馆，可遮阴小憩。" },
+      { "tag": "🍲", "name": "船面", "price": "฿40–80", "desc": "小巧入味，深受泰国一日游游客喜爱。" }
+    ],
+    "quote": { "text": "正午烈日后来一颗冰椰子，才是王宫真正的秘诀。", "author": "— 一位常客" }
+  },
+  "gallery": {
+    "label": "图集",
+    "heading": "镜头下的邦巴因",
+    "intro": "穿过殿宇、莲池与花园——从鎏金大殿到静谧的纪念殿。",
+    "historicalNote": "所示图片为占位示意，待替换为王宫授权照片。",
+    "credits": "图片：占位图集（上线前将替换为邦巴因王宫授权照片）。",
+    "alts": [
+      "池中的爱沙湾提帕雅殿 [Aisawan Thiphya-Art]",
+      "金殿在莲池中的倒影",
+      "威哈乍伦 [Wehart Chamrun] 中式宅邸外观",
+      "威哈乍伦 [Wehart Chamrun] 的盘龙中式楼梯",
+      "维图塔萨纳瞭望塔 [Withun Thatsana]",
+      "瓦罗帕披曼殿 [Warophat Phiman]",
+      "乌泰亚蓬米萨坦 [Uthayan Phumisathian] 岛殿",
+      "河畔花园与修剪绿篱",
+      "欧式花园中的大理石喷泉",
+      "入口处朱拉隆功王骑马铜像",
+      "湖畔苏南达王后 [Queen Sunanda] 纪念碑",
+      "赫姆蒙提安提瓦拉殿 [Ho Hem Montian Thewarat]",
+      "沙帕卡尼卡拉殿 [Saphakhanigarat]",
+      "山形屋顶与珍珠母贝镶嵌",
+      "横跨王宫莲池的桥",
+      "倒影池中的莲花",
+      "昭披耶河畔的林荫步道",
+      "欧式陶瓮与绿篱",
+      "中式宅邸内部",
+      "殿宇之间的花园小径"
+    ],
+    "viewLocation": "在 Google 地图上查看位置 →"
+  },
+  "reviews": {
+    "label": "评价",
+    "heading": "游客怎么说",
+    "intro": "邦巴因王宫在数千条 Google 评价中保持 4.5/5 的评分。",
+    "disclaimer": "汇总自公开 Google 评价，仅供参考。",
+    "declaration": "我们是一个独立的非营利向导，与王室或 Google 均无隶属关系。",
+    "featured": [
+      { "text": "堪称曼谷近郊最华美的王宫之一——池中金殿美得不真实。", "source": "— 经 Google" },
+      { "text": "清晨前往、衣着轻便、在花园里放慢脚步，每一铢都值得。", "source": "— 经 Google" }
+    ],
+    "items": [
+      { "text": "9 点的爱沙湾提帕雅殿 [Aisawan Thiphya-Art] 配上池面倒影，宛如明信片。", "name": "阿侬", "date": "2026-01", "rating": "5" },
+      { "text": "钟爱泰、中、欧三式交融，像在一处看尽三座王宫。", "name": "Tom", "date": "2025-12", "rating": "5" },
+      { "text": "周二清晨很安静，整座桥都归我们拍照。", "name": "萍", "date": "2025-11", "rating": "5" },
+      { "text": "衣着要透气——正午很晒，但花园遮阴、十分宜人。", "name": "吉拉", "date": "2025-10", "rating": "4" },
+      { "text": "苏南达王后 [Queen Sunanda] 纪念碑令人动容，务必在那儿驻足片刻。", "name": "Ken", "date": "2025-09", "rating": "5" },
+      { "text": "从曼谷搭火车半日往返很方便，再短途嘟嘟车到门口。", "name": "梅", "date": "2025-08", "rating": "5" },
+      { "text": "很美，但要早到——正午光线硬、人也多。", "name": "小鸥", "date": "2025-07", "rating": "4" },
+      { "text": "中式宅邸内部与瞭望塔视野是我们此行的高光。", "name": "宁", "date": "2025-06", "rating": "5" }
+    ],
+    "viewLocation": "在 Google 地图上查看位置 →"
+  },
+  "sources": {
+    "label": "资料与纠错",
+    "heading": "我们的资料来源",
+    "intro": "本指南汇编自公开、权威的参考资料。我们是一个独立的非营利项目，不出售门票。",
+    "photoTitle": "图片",
+    "photoItems": [
+      { "text": "图集图片为占位示意，待替换为王宫授权照片。", "url": "", "linkLabel": "" }
+    ],
+    "factTitle": "事实",
+    "factText": "开放时间、门票与联系方式以王宫官方公告为准，王室假日可能调整。",
+    "correctionTitle": "发现错误？",
+    "correctionText": "我们欢迎游客与当地居民的指正。若信息过时，请告知我们。",
+    "correctionMailto": "mailto:hello@bangpainpalace.com",
+    "correctionCta": "发送纠错邮件",
+    "copyright": "© 2026 邦巴因王宫指南。非营利游客指南。"
+  },
+  "mapSection": {
+    "label": "位置",
+    "heading": "如何找到邦巴因王宫",
+    "lead": "位于昭披耶河中的小岛，大城府邦巴因县。",
+    "stats": [
+      { "tag": "🚆", "value": "约 1 小时", "sub": "曼谷乘火车" },
+      { "tag": "🚗", "value": "约 60 公里", "sub": "曼谷以北" },
+      { "tag": "🗺️", "value": "6HJH+33", "sub": "位置代码" }
+    ],
+    "address": "泰国 大城府 邦巴因县 Ban Len 13160",
+    "plusCode": "6HJH+33 Ban Len, 邦巴因县, 大城府, 泰国",
+    "coords": "14.2302° N, 100.5751° E"
+  },
+  "footer": {
+    "brand": { "name": "邦巴因王宫", "tagline": "皇家夏宫 · 大城府" },
+    "about": "一个独立的非营利游客指南，介绍大城府的泰国皇家夏宫——其历史、建筑与参观方式。",
+    "navTitle": "栏目",
+    "navItems": [
+      { "href": "#about", "label": "概况" },
+      { "href": "#history", "label": "历史" },
+      { "href": "#guide", "label": "游玩" },
+      { "href": "#food", "label": "餐饮" },
+      { "href": "#gallery", "label": "图集" },
+      { "href": "#reviews", "label": "评价" },
+      { "href": "#map", "label": "地图" }
+    ],
+    "noteTitle": "关于本指南",
+    "note": "我们是一个独立的非营利项目。本网站并非王宫官方网站，亦不属于王室办公厅或 Google。",
+    "mapsLabel": "Google Maps →",
+    "sourcesTitle": "资料来源",
+    "sourcesNote": "汇编自公开旅游参考资料。",
+    "privacy": "隐私",
+    "terms": "条款",
+    "cookies": "Cookie",
+    "legal": {
+      "cookies": {
+        "title": "Cookie 设置",
+        "updated": "更新于 2026 年",
+        "intro": "我们仅使用少量 Cookie 来记住您的语言与偏好，并了解匿名访问量。我们不会出售个人数据。",
+        "categories": [
+          { "h": "必要", "status": "始终开启", "p": "网站运行所必需，例如记住您选择的语言。", "sub": "不可关闭", "subStatus": "存储于您的设备" },
+          { "h": "分析", "status": "开启", "p": "匿名、汇总的统计数据，帮助我们改进指南。", "sub": "匿名", "subStatus": "自动过期" },
+          { "h": "营销", "status": "关闭", "p": "目前未使用。如有变更，我们会先征求同意。", "sub": "未使用", "subStatus": "—" }
+        ],
+        "consent": "继续浏览即表示您接受我们使用必要 Cookie。"
+      },
+      "privacy": {
+        "title": "隐私政策",
+        "updated": "更新于 2026 年",
+        "intro": "本非营利指南尊重您的隐私。我们仅收集运营网站与改善体验所需的信息。",
+        "sections": [
+          { "h": "我们收集什么", "p": "通过注重隐私的分析工具收集的匿名使用数据（访问页面、语言、大致地区）。" },
+          { "h": "我们不做什么", "p": "我们不出售、出租或共享个人数据，也不运行第三方广告追踪器。" },
+          { "h": "您的选择", "p": "您可随时在 Cookie 设置中关闭分析 Cookie，并有权要求删除您认为我们持有的任何数据。" },
+          { "h": "联系我们", "p": "隐私相关问题请发送至 hello@bangpainpalace.com。" }
+        ]
+      },
+      "terms": {
+        "title": "服务条款",
+        "updated": "更新于 2026 年",
+        "intro": "这是一个独立的非营利游客指南。使用本网站即表示您同意以下简明条款。",
+        "sections": [
+          { "h": "仅供参考", "p": "所有内容均用于一般旅行信息，可能随时变更。出行前请务必以官方来源核实开放时间与门票。" },
+          { "h": "非官方", "p": "我们与王室办公厅、王宫管理处或 Google 均无隶属关系。名称、图片与事实归各自所有者所有。" },
+          { "h": "外部链接", "p": "第三方链接仅为了方便提供，我们对其内容不承担责任。" },
+          { "h": "责任", "p": "对于因使用本指南而造成的任何损失或不便，我们概不负责。" }
+        ]
+      }
+    },
+    "disclaimerLead": "非官方非营利游客指南。",
+    "unofficial": "不属于王室办公厅或 Google。",
+    "dataSource": "天气数据：Open-Meteo。地图：Google Maps。",
+    "copyright": "© 2026 邦巴因王宫指南。非营利游客指南。"
+  }
+}
