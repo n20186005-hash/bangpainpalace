@@ -1,17 +1,28 @@
 {
   "meta": {
-    "title": "Bang Pa-In Palace (พระราชวังบางปะอิน) — Royal Summer Palace Guide | Ayutthaya",
-    "description": "A complete visitor guide to Bang Pa-In Palace, the Thai royal summer palace in Ayutthaya: history, architecture, opening hours, tickets, how to get there, photography spots and travel tips."
+    "title": "Bang Pa-In Palace (Ayutthaya) – Tickets, Dress Code & Opening Hours 2026",
+    "description": "Bang Pa-In Royal Palace (Summer Palace) visitor guide in Ayutthaya, Thailand: 2026 ticket price, strict dress code, opening hours, how to get from Bangkok, best photo spots, and golf cart rental."
   },
   "header": {
     "home": "Home",
     "about": "Overview",
     "history": "History",
+    "weather": "Weather",
+    "seasonal": "Seasons",
+    "dressCode": "Dress",
+    "transport": "Transport",
     "guide": "Visit",
+    "routes": "Routes",
+    "amenities": "Services",
+    "responsibility": "Etiquette",
     "food": "Dining",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "map": "Map"
+  },
+  "mobileCta": {
+    "map": "Open in Maps",
+    "call": "Call palace"
   },
   "hero": {
     "eyebrow": "Royal Summer Palace · Ayutthaya",
@@ -290,11 +301,16 @@
     },
     "faqTitle": "Frequently asked questions",
     "faqs": [
+      { "q": "What are the opening hours of Bang Pa-In Palace?", "a": "Open Tuesday–Sunday, 08:00–16:00. Last entry at 15:30. Closed every Monday and certain royal holidays." },
+      { "q": "How much is the entrance fee / ticket price for Bang Pa-In Palace?", "a": "Foreign adults 100 THB (pavilions and grounds included). Thai nationals enter free with ID. There is no separate camera fee." },
+      { "q": "Is there a strict dress code at Bang Pa-In Palace?", "a": "Yes. Shoulders and knees must be covered (no sleeveless tops, no shorts or mini-skirts, no ripped jeans, no yoga pants). Sarongs are lent free of charge at the main gate." },
       { "q": "Is Bang Pa-In Palace open on Mondays?", "a": "No. It is closed every Monday and on some royal holidays; plan a Tuesday–Sunday visit." },
-      { "q": "How much is the entrance fee?", "a": "100 THB for foreign adults; Thai nationals enter free with ID. There is no separate camera fee." },
-      { "q": "What should I wear?", "a": "Modest clothing covering shoulders and knees, as it is an active royal site. Sarongs are loaned free at the entrance." },
-      { "q": "How long do I need?", "a": "About 2 hours for the highlights, or 4 hours for a relaxed, in-depth visit." },
-      { "q": "Can I fly a drone?", "a": "Only with advance permission from the palace; recreational drones are generally not allowed." }
+      { "q": "How do I get to Bang Pa-In Palace from Bangkok?", "a": "Three common options. (1) Train from Krung Thep Aphiwat or Hua Lamphong to Bang Pa-in station (~1 h), then a short tuk-tuk ride. (2) Taxi or private car via Phahonyothin highway (~60–75 min). (3) Join an Ayutthaya day tour that includes the palace." },
+      { "q": "Can the palace website and signs be read in English?", "a": "Most pavilion name plaques, map boards and the official printed guide are bilingual Thai–English. Staff at the ticket gate usually speak basic English." },
+      { "q": "Is the cable car across the Chao Phraya River to Wat Niwet free?", "a": "Yes. The cable car between the palace island and Wat Niwet Thammaprawat is free of charge for palace visitors. It may suspend operation during strong winds or storms." },
+      { "q": "Can I rent a golf cart inside the palace? How much?", "a": "Yes, highly recommended because the grounds are large and Thailand is hot. Roughly 400 THB for the first hour; a valid driver's license is required." },
+      { "q": "What are the best photography spots at Bang Pa-In Palace?", "a": "Aisawan Thiphya-Art throne hall reflected on the still lotus pond (early morning before wind picks up), the Chinese-style Wehart Chamrun mansion interior, and the Withun Thatsana lookout tower rooftop for river views." },
+      { "q": "How long do I need for Bang Pa-In Palace?", "a": "About 2 hours for the classic highlights, or 4 hours for a relaxed, in-depth visit including Warophat Phiman interiors, memorial pavilions, and the cable car to Wat Niwet." }
     ],
     "nearby": {
       "title": "Nearby in Ayutthaya",
@@ -385,6 +401,386 @@
     "correctionMailto": "mailto:n20186005@gmail.com",
     "correctionCta": "Email a correction",
     "copyright": "© 2026 Bang Pa-In Palace Guide. Non-profit visitor guide."
+  },
+  "weather": {
+    "label": "Weather & Actionable Tips",
+    "heading": "Before you go: today and the next 7 days",
+    "intro": "Tourist-focused advice: what to wear, what to carry, which parts of the palace work with today's weather. Updated every hour from live observations.",
+    "now": "Right now",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "humidityHuman": {
+      "dry": "Dry air",
+      "normal": "Comfortable",
+      "sticky": "Sticky & humid",
+      "swamp": "Very muggy"
+    },
+    "wind": "Wind",
+    "retrieved": "Updated",
+    "forecast": "7-day forecast",
+    "condition": {
+      "clear": "Clear",
+      "cloudy": "Cloudy",
+      "drizzle": "Drizzle",
+      "light_rain": "Light rain",
+      "medium_rain": "Rain",
+      "heavy_rain": "Heavy rain",
+      "storm": "Thunderstorms",
+      "fog": "Foggy"
+    },
+    "uvLabel": {
+      "low": "Mild UV",
+      "mod": "UV",
+      "high": "Strong UV",
+      "vhigh": "Very strong UV"
+    },
+    "bucketTitles": {
+      "outfit": "👕 Outfit & dress",
+      "plan": "📍 Palace itinerary",
+      "gear": "🎒 What to bring"
+    },
+    "warning": {
+      "warn_thunder": "⛈️ Weather alert: Thunderstorms likely today. Avoid the Withun Thatsana tower, cable car across the river, and open bridges. Stay in the indoor Wehart Chamrun mansion or European wings if storms hit. Adjust itinerary if possible.",
+      "warn_heavy_rain_wind": "🌧️ Weather alert: Heavy rain + strong winds. Riverside walkways may be slippery; cable car and open-air viewpoints may suspend. Waterproof outer layer is essential, no long umbrellas.",
+      "warn_heavy_rain": "🌧️ Weather alert: Heavy rain expected. Paved loop and bridges get slippery. Prioritise indoor pavilions, skip riverside lower paths that may close.",
+      "warn_strong_wind": "💨 Weather alert: Strong winds gusting. Stay away from tree branches, loose signage, and the cable car crossing. Avoid the lookout tower stairs.",
+      "warn_fog": "🌫️ Weather alert: Low visibility. Bridges over the lotus pond may be slippery. River views from the tower will be limited; drive carefully.",
+      "warn_extreme_heat": "🌡️ Weather alert: Extreme heat today. Strongly recommend golf cart rental; only stay outdoors 08:00–10:30 then indoor pavilions until 15:00."
+    },
+    "advice": {
+      "outfit_rain_probable": "Water-resistant jacket or foldable rain layer recommended; closed-toe shoes avoid muddy patches.",
+      "outfit_light_rain": "Breathable rain layer, avoid light-coloured fabric that shows water marks.",
+      "outfit_heavy_rain": "Waterproof outerwear + quick-dry trousers; skip flowing skirts on windy bridges.",
+      "outfit_hot": "Loose light-coloured breathable clothes. Long sleeves & long trousers are actually cooler outdoors and also satisfy dress-code for indoor throne halls.",
+      "outfit_warm": "Light breathable fabrics are enough; no jacket needed at midday.",
+      "outfit_uv_strong": "Cover shoulders and knees with breathable fabrics, wear sunglasses even on cloudy glare days.",
+      "outfit_uv_moderate": "Light sun sleeves are a practical backup for exposed walkways.",
+      "outfit_large_delta": "Carry a thin cardigan or scarf for early morning entry and shaded indoor rooms.",
+      "outfit_cold": "Thermal underlayer + midlayer + wind-resistant shell. Even in Thailand the northern monsoon cold mornings surprise people.",
+      "outfit_cool_morning": "A shawl or light jacket is handy at the 08:00 opening; remove by 10:00.",
+      "outfit_windy": "Tie hair up; avoid loose wide-brim hats or flowing dresses on bridges and the tower platform.",
+      "outfit_strong_wind": "Secure all loose items; avoid skirts on riverside walkways and tower stairs.",
+      "outfit_humid_hot": "Feels much hotter than the thermometer shows. Choose sweat-wicking fabric, carry a spare change of top.",
+
+      "plan_rain_probable": "Likely to rain in the afternoon. Schedule Aisawan reflection + outdoor gardens before 11:00, then indoor Chinese & European mansion wings 12:00–14:30.",
+      "plan_light_rain": "Rain will make paved bridges and lotus pond steps slippery. Skip wet lawn shortcuts; Wehart Chamrun interiors provide excellent cover.",
+      "plan_heavy_rain": "Outdoor experience is poor. Focus the visit on the Chinese mansion, Warophat Phiman European wing, and marble memorial plaques under covered walkways.",
+      "plan_hot": "Hit outdoor highlights first: Aisawan Hall + bridges 08:00–09:30, then tower / gardens before 11:00. Strongly consider renting the golf cart. Lunch outside, come back only if the afternoon cools.",
+      "plan_hot_mild": "Do the outdoor loop before noon, interior halls after 13:00. Still keep a bottle with you.",
+      "plan_windy_moderate": "Cable car across to Wat Niwet may suspend if gusts pick up. Skip tower rooftop if wind is shaking railings.",
+      "plan_strong_wind": "Cable car crossing is very likely closed. Withun Thatsana tower upper levels are unsafe. Stick to ground loop and covered pavilions.",
+      "plan_clear": "Perfect light for Aisawan throne-hall lotus-pond reflections. Cross to Wat Niwet Thammaprawat via cable car in the late afternoon golden hour.",
+      "plan_cloudy": "Even, soft light all day — ideal for architecture photos without harsh shadows. You can extend walking time without feeling cooked.",
+
+      "gear_umbrella_or_raincoat": "Compact umbrella + foldable rain poncho (better for group protection under awnings).",
+      "gear_foldable_umbrella": "Just a compact foldable umbrella should cover it today.",
+      "gear_raincoat_no_long_umbrella": "Raincoat over long-handled umbrellas — wind turns them inside out on bridges; hands-free is safer on wet stairs.",
+      "gear_sun_and_water": "SPF 50+ sunscreen re-applied every 2 hours, 1.5 L of water per person, wide-brim hat.",
+      "gear_water": "At least 1 L of water per visitor, plus a sweat towel.",
+      "gear_full_sun_protection": "Polarised sunglasses, wide-brim hat, sunscreen, UPF sun sleeves, lip balm with SPF.",
+      "gear_sun_basic": "Sunscreen and sunglasses are the minimum today.",
+      "gear_light_jacket": "Thin foldable cardigan or scarf for cool interiors / early morning.",
+      "gear_winter": "Thicker jacket, scarf, close-toed shoes. Rare but overnight cold snaps happen Nov–Dec."
+    },
+    "columns": {
+      "day": "Day",
+      "icon": "",
+      "temp": "High / Low",
+      "rain": "Rain chance",
+      "uv": "UV index",
+      "advice": "What to do"
+    },
+    "noUmbrellaDays": "Clear dry days are the rare window for perfect Aisawan reflections on the still lotus pond."
+  },
+  "dressCode": {
+    "label": "Strict dress code",
+    "heading": "Dress code checklist before you enter",
+    "intro": "Bang Pa-In is a functioning royal site, not a casual park. Gate staff may refuse entry if clothing does not meet the standard below. Double-check this list before you leave the hotel, because the queue at the gate can be long.",
+    "allowedTitle": "Allowed",
+    "allowed": [
+      "T-shirts, polo shirts, blouses with sleeves of any length (short sleeves are fine).",
+      "Long trousers (jeans, chinos, linen) or knee-length or longer skirts for women and men.",
+      "Closed or open-toe shoes, sandals and flip-flops are all acceptable for feet.",
+      "If you wear thin or sheer fabric, an undershirt is strongly recommended."
+    ],
+    "forbiddenTitle": "Refused at the gate",
+    "forbidden": [
+      "Sleeveless tops: tank tops, vest tops, halter necks, spaghetti straps.",
+      "Shorts of any kind for men or women, including knee-length athletic shorts.",
+      "Mini-skirts, cut-off skirts, anything above the knee.",
+      "Ripped or distressed jeans, even if the holes are small.",
+      "Yoga pants, leggings, tight lycra trousers, see-through trousers."
+    ],
+    "onSiteTitle": "If you arrive under-dressed",
+    "onSite": [
+      "Sarongs and wrap-skirts are lent free of charge at the main gate. A refundable cash deposit may be requested.",
+      "There is no dedicated clothing shop inside the grounds; do not plan to buy proper clothes once you are inside.",
+      "Remember that the dress code is enforced both outdoors and inside the throne halls — you will be checked at the inner pavilions too."
+    ],
+    "footnote": "The standards above apply to visitors of every nationality and age. They come directly from the palace administration and can be tightened without notice on days with royal engagements."
+  },
+  "transport": {
+    "label": "Getting there",
+    "heading": "How to get from Bangkok to Bang Pa-In Palace",
+    "intro": "Bang Pa-In is about 60 kilometres north of Bangkok along the Chao Phraya river. Below are the four most practical routes, ordered by how popular they are with foreign travellers. All durations are typical off-peak estimates.",
+    "durationLabel": "Typical time",
+    "priceLabel": "Typical cost",
+    "modes": [
+      {
+        "title": "Train (Northern Line)",
+        "tag": "Authentic",
+        "duration": "About 60–90 min",
+        "price": "From 20 THB / person",
+        "steps": [
+          "Depart Krung Thep Aphiwat (Central) or Hua Lamphong station toward Chiang Mai / Chiang Rai.",
+          "Get off at BANG PA-IN railway station (stop name visible on the board).",
+          "Outside the station the only public option is a tuk-tuk or motorbike taxi to the palace, ~15 min ride."
+        ]
+      },
+      {
+        "title": "Private taxi / Grab car",
+        "tag": "Direct",
+        "duration": "60–90 min (traffic varies)",
+        "price": "Around 1,200–1,800 THB one way",
+        "steps": [
+          "Book a sedan or SUV via Grab / Bolt / in-hotel concierge from your hotel in Bangkok.",
+          "Best route: Highway No. 1 Phahonyothin or Don Mueang – Asian Highway 32.",
+          "Ask the driver to wait for you outside the gate if you want a return trip on the same day; otherwise queues for a return taxi outside the palace can be slow."
+        ]
+      },
+      {
+        "title": "Ayutthaya day tour",
+        "tag": "Hassle-free",
+        "duration": "Full day 8–10 hrs",
+        "price": "Tour dependent",
+        "steps": [
+          "Most reputable Ayutthaya one-day packages include Bang Pa-In as a morning or late-afternoon stop.",
+          "Always check the itinerary explicitly for 'Bang Pa-In' — cheaper tours sometimes skip it for a second temple.",
+          "Hotel pickup + air-conditioned van is standard; ask if the Wat Niwet cable-car crossing is included or time-permitted."
+        ]
+      },
+      {
+        "title": "Riverside cruise / Chao Phraya boat",
+        "tag": "Scenic",
+        "duration": "3–4 hrs one way",
+        "price": "Boat-dependent",
+        "steps": [
+          "Several operators run day boats north from Tha Tien or Riva Surya pier in Bangkok.",
+          "You disembark at the Bang Pa-In riverside jetty, a short walk (or free shuttle) to the palace main gate.",
+          "Very seasonal: only dry-season months (Nov–Feb) have consistent schedules; watch for low-water cancellations."
+        ]
+      }
+    ],
+    "arrival": {
+      "title": "⚠ Arrival scam warning (read before you get off the vehicle)",
+      "items": [
+        "Only buy tickets at the OFFICIAL counter INSIDE the palace main gate. Ignore any booths set up in the car park or at the road end — they sell the same ticket at double or triple the price.",
+        "If a driver tells you the palace is 'closed today' or 'closed for a royal function', ALWAYS verify yourself at the gate. This is a classic scam to reroute you to a private temple, gem shop or elephant camp.",
+        "The official tuk-tuk fare from Bang Pa-In railway station to the gate is roughly 40–60 THB. Anything above 100 THB is overpriced; walk 50 m and flag a different one."
+      ]
+    },
+    "footnote": "All times and fares are rough 2026 guidelines for a normal weekday. Public holidays, long weekends and Buddhist festival days (Songkran, Loy Krathong, Visakha Bucha) will be busier, slower and more expensive."
+  },
+  "seasonal": {
+    "label": "Seasonal guide",
+    "heading": "Best time to visit: a 4-season overview",
+    "intro": "Climatology overview based on 30-year typical conditions for Ayutthaya and the Chao Phraya basin, combined with notes on water levels, garden bloom and crowds.",
+    "columns": {
+      "season": "Season",
+      "months": "Months",
+      "weather": "Typical weather",
+      "water": "River & pond",
+      "garden": "Gardens & bloom",
+      "crowd": "Crowds",
+      "note": "Traveler tip"
+    },
+    "rows": [
+      {
+        "season": "Cool & dry",
+        "months": "Nov – Feb",
+        "weather": "24–32°C, low humidity, mostly clear mornings",
+        "water": "River level moderate; pond reflections sharp",
+        "garden": "Temperate annuals; lotus beds begin late Feb",
+        "crowd": "Peak season — weekends busiest",
+        "note": "Best overall. Arrive at opening to beat tour groups."
+      },
+      {
+        "season": "Hot season",
+        "months": "Mar – May",
+        "weather": "30–40°C, low rain, strong sun",
+        "water": "Lowest river levels; fountains run all day",
+        "garden": "Tropical flowers in bloom, lawns need water",
+        "crowd": "Thinner foreign visitors, local day-trippers",
+        "note": "Only visit 08:00–11:00. Rent a golf cart."
+      },
+      {
+        "season": "Green / Monsoon onset",
+        "months": "Jun – Aug",
+        "weather": "28–34°C, afternoon short storms",
+        "water": "River rising; reflections good after rain",
+        "garden": "Lush foliage, lotus peak in July",
+        "crowd": "Moderate; indoor pavilions provide cover",
+        "note": "Plan the indoor Chinese mansion for 13:00–14:30."
+      },
+      {
+        "season": "Late monsoon",
+        "months": "Sep – Oct",
+        "weather": "26–32°C, longer rain spells",
+        "water": "High river; occasional riverside path closure",
+        "garden": "Fresh after rain; fewer mosquitoes in open area",
+        "crowd": "Lowest international visitor volumes",
+        "note": "Check for local rainfall the night before; half-day is enough."
+      }
+    ]
+  },
+  "audience": {
+    "label": "Plan by travel group",
+    "heading": "Three itineraries built around how you travel",
+    "intro": "Pick one that matches your pace and companions. All routes respect the palace's opening hours (08:00–16:00, last entry 15:30).",
+    "items": [
+      {
+        "icon": "👨‍👩‍👧",
+        "name": "Family with children",
+        "pace": "Slow pace · ~2 hrs · shaded stops",
+        "route": "Entrance → Golf cart rental → Aisawan hall (photo stop) → Wehart Chamrun Chinese mansion (indoors, cool) → Riverside fountains (rest & snacks) → Memorial → Exit via gardens",
+        "highlights": ["Rent a golf cart, it gets hot at noon", "Free sarong loan covers most dress-code issues", "Carry snacks; limited options inside"],
+        "bestFor": "Families with children 4+, seniors, and multi-generational groups"
+      },
+      {
+        "icon": "📷",
+        "name": "Photography & natural light",
+        "pace": "Golden-hour focused · ~3–4 hrs",
+        "route": "07:45 arrive for parking → Bridge and Aisawan hall (08:05, empty reflection) → Withun Thatsana tower & spiral stairs → Uthayan Phumisathian terrace for backlight → Riverside golden-hour (17:00–17:45, Oct–Feb) → Cross cable car to Wat Niwet Thammaprawat",
+        "highlights": ["Low-angle polariser shot from the bridge, 24–35mm", "Midday cover: Wehart Chamrun interiors & marble statues", "Bring a cloth to wipe dew on the bridge rail before 08:30"],
+        "bestFor": "Travel photographers, couples, landscape and architectural visitors"
+      },
+      {
+        "icon": "♿",
+        "name": "Low-effort & accessibility",
+        "pace": "Gentle · ~1.5–2 hrs · barrier-free paths",
+        "route": "Accessible drop-off → Golf cart or wheelchair on paved loop → Aisawan viewpoint (no steps) → Wehart Chamrun ground floor → European halls & equestrian statue → Cafe & rest area → Exit",
+        "highlights": ["Main paved loop is mostly flat; borrow a wheelchair at the gate", "Avoid the lookout tower (narrow stairs) and the far riverside steps", "Tuesday & Thursday mornings are quietest for personal space"],
+        "bestFor": "Seniors, wheelchair users, travelers with reduced mobility"
+      }
+    ]
+  },
+  "routes": {
+    "label": "Classic routes",
+    "heading": "Half-day or full-day? Choose your loop",
+    "intro": "The palace island is small enough for a half-day but rich enough for a full day when combined with the cable-car temple across the river.",
+    "items": [
+      {
+        "name": "Half-day (2.5 hrs)",
+        "duration": "08:00 – 10:30 or 13:30 – 16:00",
+        "whoFor": "First-time visitors, short stopovers between Bangkok and Ayutthaya",
+        "loop": [
+          "00:00 — Main gate & ticket window, collect sarong if needed",
+          "00:10 — Aisawan Thiphya-Art throne hall & bridge reflection",
+          "00:40 — Wehart Chamrun Chinese mansion (inside + dragon staircase)",
+          "01:20 — Withun Thatsana lookout tower or skip if hot",
+          "01:50 — Warophat Phiman & equestrian statue",
+          "02:15 — Queen Sunanda memorial & marble plaques",
+          "02:30 — Gift kiosk & exit"
+        ],
+        "tips": "Skip the tower and European wings if you are pressed for 2 hours. Do not skip the Aisawan hall."
+      },
+      {
+        "name": "Full day (5 hrs)",
+        "duration": "08:00 – 13:00 with a riverside lunch nearby",
+        "whoFor": "Return visitors, history & architecture lovers, photographers",
+        "loop": [
+          "00:00 — Enter with the first batch at opening",
+          "00:20 — Empty reflections at Aisawan hall (north & south bridges)",
+          "01:00 — Wehart Chamrun interiors & Chinese mansion details",
+          "01:40 — Ho Hem Montian Thewarat pavilion & royal plaques",
+          "02:10 — Withun Thatsana tower: 360° river view",
+          "02:40 — Uthayan Phumisathian & European wings",
+          "03:10 — Queen Sunanda memorial corner",
+          "03:40 — Saphakhanigarat royal boat hall",
+          "04:10 — Free cable car across river to Wat Niwet Thammaprawat (Gothic Buddhist temple)",
+          "05:00 — Return via riverside lunch (local-style noodle shops)"
+        ],
+        "tips": "Bring a small towel and water. Lunch spots are types available: riverside Thai noodle, family-run curry shop, coconut ice cream carts — no specific vendor endorsed."
+      }
+    ]
+  },
+  "amenities": {
+    "label": "Visitor services & nearby facilities",
+    "heading": "On-site services and the kinds of facilities nearby",
+    "intro": "Neutral overview of service types available on or near the palace grounds. We do not endorse or rank individual businesses.",
+    "onSite": {
+      "title": "Inside the palace",
+      "items": [
+        { "k": "Restrooms", "v": "Clean public restrooms available near the entrance, the Chinese mansion, and the European halls." },
+        { "k": "Dress-code support", "v": "Sarong and trousers available for loan at the gate if shoulders or knees are exposed." },
+        { "k": "Wheelchair & stroller", "v": "Wheelchairs available at the entrance on a first-come basis; main loop is stroller friendly." },
+        { "k": "Golf cart rental", "v": "Paid golf-cart rental with hourly rates; valid driver's license is required." },
+        { "k": "Information", "v": "Visitor information and site map near the main ticket counter." },
+        { "k": "Gift & drinks", "v": "Small souvenir kiosk and bottled water near the exit area." },
+        { "k": "First-aid", "v": "Basic first-aid station near the entrance staffed during opening hours." }
+      ]
+    },
+    "nearby": {
+      "title": "Around the palace (5–15 min by vehicle)",
+      "categories": [
+        {
+          "name": "Parking",
+          "desc": "Paid car and motorcycle parking is available in designated lots within walking distance of the main gate. Large vehicles such as tour buses use separate parking areas."
+        },
+        {
+          "name": "Places to eat",
+          "desc": "Nearby streets offer common food types — local-style noodle stalls, curry and rice meals, seafood-focused riverside restaurants, dessert and coconut ice cream carts, and basic coffee shops. Halal options are also present in the broader Bang Pa-in district."
+        },
+        {
+          "name": "Places to stay",
+          "desc": "Common accommodation categories in the wider area include small family-run guesthouses, mid-range riverside hotels, and larger Ayutthaya-branded resorts. Most visitors stay overnight in Ayutthaya city or return to Bangkok."
+        },
+        {
+          "name": "Convenience & grocery",
+          "desc": "Standard Thai convenience-store chains and local grocery shops are available within a few kilometres for drinks, snacks, personal care items, and travel essentials."
+        },
+        {
+          "name": "Fuel & EV charging",
+          "desc": "Major national petrol stations, including diesel and 95-octane, line Phahonyothin / Asian Highway routes. Public EV charging points exist in larger commercial areas along main roads in Ayutthaya; verify coverage for your route before travel."
+        },
+        {
+          "name": "Health & pharmacy",
+          "desc": "Standard pharmacies and a government hospital are present in Bang Pa-in district centre for common needs. Serious cases typically route to Ayutthaya hospital."
+        },
+        {
+          "name": "ATMs & currency",
+          "desc": "Major Thai bank ATMs are present near the station and commercial areas. Small vendors prefer cash; the palace ticket counter accepts standard methods."
+        }
+      ]
+    }
+  },
+  "responsibility": {
+    "label": "Science & visitor responsibility",
+    "heading": "Read before you enter: how to visit responsibly",
+    "intro": "As a cultural heritage site and working royal landscape, Bang Pa-In asks for basic shared conduct. The notes below combine palace etiquette with generic low-impact travel guidance.",
+    "sections": [
+      {
+        "title": "Heritage conservation (why it matters)",
+        "body": "Bang Pa-In is a registered Thai royal historic site. Pavilions such as Aisawan Thiphya-Art feature hand-inlaid mother-of-pearl and traditional teak joinery; Wehart Chamrun uses a hand-fitted Chinese mortise-and-tenon structure without iron nails. Touching surfaces, sitting on balustrades or leaning on columns causes cumulative wear that is expensive and sometimes impossible to restore. Flash photography inside closed pavilions can accelerate pigment fading on murals and painted woodwork."
+      },
+      {
+        "title": "Ecology of the palace grounds",
+        "body": "The central lotus pond and Chao Phraya riverside form a small urban wetland visited by native birds, monitor lizards and occasional migratory waterfowl during the cool season. Do not feed the fish or birds with human snacks — processed bread and packaged food distort local diets. Picking lotus flowers or clipping garden plants is strictly prohibited. If you notice stranded wildlife on paths, report it to an on-site attendant; do not attempt to handle animals yourself."
+      },
+      {
+        "title": "Low-impact visitor conduct (LNT)",
+        "body": "Follow universal Leave-No-Trace principles adapted for heritage sites: 1) Carry out all personal waste including bottle caps and tissue paper. 2) Stay on paved routes; do not cut across lawns or lotus embankments. 3) Keep voices low near memorials and throne halls. 4) Avoid single-use plastic bags where a reusable bag or pocket will do. 5) Do not leave food scraps for animals, even outside the walls."
+      },
+      {
+        "title": "Photography ethics",
+        "body": "Tripods and drones require prior written permission from palace authorities. Even when photography is permitted, avoid blocking other visitors' access or egress on bridges and stairs. When photographing local staff or Thai visitors wearing religious or royal regalia, ask first and show the frame if requested."
+      },
+      {
+        "title": "Community & local economy",
+        "body": "Bang Pa-in district is a working agricultural and commuter town, not a purpose-built tourism district. Patronise local food and services with normal civility; be fair and calm with price discussions. Keep all payment methods (cash, cards, phones) secure on the riverside walk. The palace strongly discourages tipping or making informal payments to on-site attendants in exchange for special access."
+      }
+    ],
+    "final": "If you see something — a fallen plaque, a broken water tap, a loose railing — please report it to any uniformed staff. Small reports compound into long-term preservation."
   },
   "mapSection": {
     "label": "Location",

@@ -14,17 +14,33 @@ const canonical = `${siteConfig.domain}/${lang}/`;
 
 const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
 
+const alternateNames = Array.from(
+  new Set(
+    Object.values(siteConfig.name).concat([
+      'Bang Pa-In Royal Palace',
+      'พระราชวังบางปะอิน',
+      'Summer Palace',
+      '邦芭茵夏宫',
+    ]),
+  ),
+).filter((v, i, arr) => v !== siteConfig.name[lang] && arr.indexOf(v) === i);
+
 const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
+    '@id': `${siteConfig.domain}/#tourist-attraction`,
     name: siteConfig.name[lang],
+    alternateName: alternateNames,
     description,
     image: `${siteConfig.domain}/gallery/bang-pa-in-palace-1.jpg`,
     url: canonical,
+    telephone: siteConfig.phone,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address,
+      streetAddress: 'Ban Len, Bang Pa-in District',
+      addressLocality: 'Phra Nakhon Si Ayutthaya',
+      postalCode: '13160',
       addressCountry: 'TH',
     },
     geo: {
@@ -32,11 +48,8 @@ const jsonLd = [
       latitude: siteConfig.coords.lat,
       longitude: siteConfig.coords.lng,
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: siteConfig.rating,
-      reviewCount: siteConfig.reviewCount.replace(/,/g, ''),
-    },
+    hasMap: siteConfig.mapsUrl,
+    isAccessibleForFree: false,
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -45,7 +58,10 @@ const jsonLd = [
         closes: '16:00',
       },
     ],
-    sameAs: siteConfig.sameAs,
+    sameAs: Array.from(new Set([
+      ...siteConfig.sameAs,
+      'https://www.tourismthailand.org/Attraction/bang-pa-in-palace',
+    ])),
   },
   {
     '@context': 'https://schema.org',

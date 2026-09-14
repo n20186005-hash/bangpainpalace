@@ -1,0 +1,49 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const a = messages.audience;
+---
+
+<section id="audience" class="bg-ivoryDim py-24 relative">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="uppercase tracking-[0.2em] text-xs text-teak/70">{a.label}</p>
+      <div class="ornament mt-4 mx-auto max-w-md"></div>
+      <h2 class="font-display text-3xl md:text-4xl text-teak mt-6 leading-tight">{a.heading}</h2>
+      <p class="mt-5 text-ink/70 leading-relaxed">{a.intro}</p>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-3 gap-6">
+      {a.items.map((item: any) => (
+        <article class="group bg-white border border-gold/20 rounded-2xl p-7 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 flex flex-col">
+          <div class="text-5xl mb-4">{item.icon}</div>
+          <h3 class="font-display text-2xl text-burgundy leading-snug">{item.name}</h3>
+          <p class="mt-2 text-sm text-gold/90 tracking-wide border-b border-dashed border-gold/25 pb-3">{item.pace}</p>
+
+          <p class="mt-4 text-sm text-ink/80 leading-relaxed">
+            <span class="font-display text-teak mr-2">↝</span>
+            {item.route}
+          </p>
+
+          <ul class="mt-5 space-y-2">
+            {item.highlights.map((h: string, i: number) => (
+              <li class="text-sm text-ink/75 flex items-start gap-2">
+                <span class="mt-1 w-1.5 h-1.5 rounded-full bg-gold shrink-0"></span>
+                <span>{h}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p class="mt-6 pt-4 border-t border-dashed border-gold/20 text-xs text-teak/75 italic">
+            {item.bestFor}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

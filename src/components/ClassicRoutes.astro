@@ -1,0 +1,66 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const r = messages.routes;
+---
+
+<section id="classic-routes" class="bg-ivory py-24 relative">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="uppercase tracking-[0.2em] text-xs text-burgundy/75">{r.label}</p>
+      <div class="ornament mt-4 mx-auto max-w-md"></div>
+      <h2 class="font-display text-3xl md:text-4xl text-teak mt-6 leading-tight">{r.heading}</h2>
+      <p class="mt-5 text-ink/70 leading-relaxed">{r.intro}</p>
+    </div>
+
+    <div class="mt-16 grid lg:grid-cols-2 gap-8">
+      {r.items.map((item: any, idx: number) => (
+        <article class={`relative border rounded-3xl p-8 overflow-hidden ${
+          idx === 0 ? 'bg-gradient-to-br from-ivory via-ivoryDim to-sand/50 border-gold/30' :
+          'bg-gradient-to-br from-teak/95 via-teakDeep to-teak text-ivory border-gold/15'
+        }`}>
+          <div class="absolute top-6 right-6">
+            <span class={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold tracking-wider ${
+              idx === 0 ? 'bg-gold/30 text-burgundy' : 'bg-goldBright/20 text-goldBright'
+            }`}>
+              {item.duration}
+            </span>
+          </div>
+
+          <h3 class={`font-display text-2xl md:text-3xl ${idx === 0 ? 'text-burgundy' : 'text-goldBright'} leading-snug`}>
+            {item.name}
+          </h3>
+          <p class={`mt-3 text-sm ${idx === 0 ? 'text-ink/70' : 'text-ivory/60'}`}>
+            {item.whoFor}
+          </p>
+
+          <ol class="mt-7 space-y-2.5 border-l-2 border-dashed pl-5 ml-2 relative">
+            {item.loop.map((step: string, sIdx: number) => (
+              <li class={`flex gap-3 text-sm leading-relaxed relative ${
+                idx === 0 ? 'text-ink/85' : 'text-ivory/80'
+              }`}>
+                <span class={`absolute -left-[30px] mt-1 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                  idx === 0 ? 'bg-gold text-burgundy' : 'bg-goldBright/90 text-teakDeep'
+                }`}>
+                  {sIdx + 1}
+                </span>
+                <span>{step.replace(/^[\d:]+[：:]\s*—\s*/, '')}</span>
+              </li>
+            ))}
+          </ol>
+
+          <div class={`mt-7 p-4 rounded-xl text-sm leading-relaxed ${
+            idx === 0 ? 'bg-white/70 text-ink/80 border border-gold/20' : 'bg-ivory/10 text-ivory/80 border border-gold/10'
+          }`}>
+            💡 {item.tips}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

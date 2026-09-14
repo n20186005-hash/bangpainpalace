@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cloudflare/workerd/main/config/packages/wrangler-config-schemas/wrangler/config-schema.json",
+  "name": "bangpainpalace",
+  "compatibility_date": "2024-10-29",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "./.worker/worker.js",
+  "assets": {
+    "directory": "./.worker/static",
+    "binding": "ASSETS"
+  },
+  "routes": [
+    {
+      "pattern": "bangpainpalace.com/*",
+      "zone_name": "bangpainpalace.com"
+    },
+    {
+      "pattern": "www.bangpainpalace.com/*",
+      "zone_name": "bangpainpalace.com"
+    }
+  ],
+  "placement": {
+    "mode": "smart"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

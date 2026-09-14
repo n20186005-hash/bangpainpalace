@@ -1,0 +1,51 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const s = messages.seasonal;
+const cols = s.columns;
+---
+
+<section id="seasonal" class="bg-sand py-24 relative">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="uppercase tracking-[0.2em] text-xs text-burgundy/80">{s.label}</p>
+      <div class="ornament mt-4 mx-auto max-w-md"></div>
+      <h2 class="font-display text-3xl md:text-4xl text-teak mt-6 leading-tight">{s.heading}</h2>
+      <p class="mt-5 text-ink/70 leading-relaxed">{s.intro}</p>
+    </div>
+
+    <div class="mt-14 overflow-x-auto">
+      <table class="min-w-full w-full border-collapse bg-ivory/70 backdrop-blur rounded-xl overflow-hidden shadow-sm border border-gold/20">
+        <thead class="bg-teak text-ivory">
+          <tr class="text-xs tracking-widest uppercase text-left">
+            <th class="px-5 py-4 font-semibold text-goldBright">{cols.season}</th>
+            <th class="px-5 py-4 font-semibold">{cols.months}</th>
+            <th class="px-5 py-4 font-semibold">{cols.weather}</th>
+            <th class="px-5 py-4 font-semibold">{cols.water}</th>
+            <th class="px-5 py-4 font-semibold">{cols.garden}</th>
+            <th class="px-5 py-4 font-semibold">{cols.crowd}</th>
+            <th class="px-5 py-4 font-semibold text-gold">{cols.note}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {s.rows.map((row: any, i: number) => (
+            <tr class={`border-t border-gold/15 ${i % 2 ? 'bg-sand/50' : 'bg-ivory/80'}`}>
+              <td class="px-5 py-4 font-display text-lg text-burgundy">{row.season}</td>
+              <td class="px-5 py-4 text-ink">{row.months}</td>
+              <td class="px-5 py-4 text-ink/80 text-sm leading-relaxed">{row.weather}</td>
+              <td class="px-5 py-4 text-ink/80 text-sm leading-relaxed">{row.water}</td>
+              <td class="px-5 py-4 text-ink/80 text-sm leading-relaxed">{row.garden}</td>
+              <td class="px-5 py-4 text-ink/80 text-sm leading-relaxed">{row.crowd}</td>
+              <td class="px-5 py-4 text-sm text-teak font-semibold leading-relaxed border-l border-gold/20 bg-gold/5">{row.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

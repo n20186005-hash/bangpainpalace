@@ -1,0 +1,58 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+}
+const { messages } = Astro.props;
+const r = messages.responsibility;
+
+const icons = ['🏛️', '🌿', '🍃', '📷', '🤝'];
+---
+
+<section id="responsibility" class="bg-teakDeep text-ivory py-24 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20 pointer-events-none">
+    <svg class="absolute bottom-0 left-0 w-full h-1/2" viewBox="0 0 800 400" preserveAspectRatio="none">
+      <defs>
+        <pattern id="grain-pat" width="160" height="160" patternUnits="userSpaceOnUse">
+          <path d="M10 80 Q 40 30 80 80 T 160 80" fill="none" stroke="rgba(201,169,98,0.08)" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#grain-pat)"/>
+    </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 relative">
+    <div class="text-center max-w-3xl mx-auto">
+      <p class="uppercase tracking-[0.2em] text-xs text-gold/80">{r.label}</p>
+      <div class="ornament mt-4 mx-auto max-w-md"></div>
+      <h2 class="font-display text-3xl md:text-4xl text-goldBright mt-6 leading-tight">{r.heading}</h2>
+      <p class="mt-5 text-ivory/70 leading-relaxed">{r.intro}</p>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-2 gap-6">
+      {r.sections.map((sec: any, i: number) => (
+        <article class={`p-7 rounded-2xl border border-gold/15 bg-teak/60 backdrop-blur ${i === 0 ? 'md:col-span-2' : ''}`}>
+          <div class="flex items-start gap-5">
+            <div class="w-14 h-14 shrink-0 rounded-2xl bg-gold/10 border border-gold/20 flex items-center justify-center text-3xl">
+              {icons[i % icons.length]}
+            </div>
+            <div class="flex-1">
+              <h3 class="font-display text-xl md:text-2xl text-goldBright leading-snug">{sec.title}</h3>
+              <p class="mt-4 text-sm md:text-[15px] text-ivory/80 leading-[1.9]">
+                {sec.body}
+              </p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-12 p-6 md:p-8 rounded-2xl bg-gradient-to-r from-gold/10 to-burgundy/10 border border-gold/25 text-center max-w-4xl mx-auto">
+      <p class="font-display text-lg md:text-xl text-goldBright italic leading-relaxed">
+        “{r.final}”
+      </p>
+    </div>
+  </div>
+</section>

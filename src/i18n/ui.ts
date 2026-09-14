@@ -8,8 +8,8 @@ export type Lang = (typeof languagesList)[number];
 
 export const languages: Record<Lang, string> = {
   th: 'ไทย',
-  en: 'English',
-  zh: '中文',
+  en: 'en',
+  zh: '中',
 };
 
 const messagesMap: Record<Lang, any> = { th, en, zh };
