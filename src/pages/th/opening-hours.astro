@@ -1,0 +1,83 @@
+---
+import { getI18n, htmlLang } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPage from '../../components/TopicPage.astro';
+
+const { lang, messages } = await getI18n(Astro.url);
+const guide = messages.guide;
+const slug = 'opening-hours';
+const canonical = `${siteConfig.domain}/${lang}/${slug}/`;
+
+const faqs = [
+  {
+    q: 'พระราชวังบางปะอิน เปิดกี่โมง?',
+    a: 'เปิดวันอังคารถึงอาทิตย์ เวลา 08:00–16:00 น. (เข้าช้าสุด 15:30 น.) ปิดทุกวันจันทร์',
+  },
+  {
+    q: 'พระราชวังบางปะอิน ปิดวันไหนบ้าง?',
+    a: 'ปิดทุกวันจันทร์ และอาจปิดเพิ่มเติมในวันหยุดราชการบางวัน เนื่องจากยังเป็นเขตพระราชฐานที่ใช้งานจริง',
+  },
+  {
+    q: 'เข้าช้าสุดกี่โมง?',
+    a: 'รับเข้าช้าสุด 15:30 น. แนะนำให้มาถึงก่อน 15:00 น. เพื่อมีเวลาเดินชม',
+  },
+  {
+    q: 'จะยืนยันเวลาได้อย่างไร?',
+    a: 'โทร +66 35 261 548 ก่อนเดินทาง โดยเฉพาะช่วงวันหยุดราชการ เพราะเวลาอาจปรับเปลี่ยนได้',
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title="เวลาเปิด-ปิด พระราชวังบางปะอิน | ค่าเข้า และวันหยุด"
+  description="เวลาเปิด-ปิด ค่าเข้าชม และวันหยุดของพระราชวังบางปะอิน พร้อมวิธียืนยันก่อนเดินทางจากกรุงเทพฯ"
+  messages={messages}
+  canonicalOverride={canonical}
+  alternates={[
+    { hreflang: htmlLang[lang], href: canonical },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+  jsonLd={[]}
+>
+  <TopicPage
+    lang={lang}
+    messages={messages}
+    breadcrumbLabel="เวลาเปิด-ปิด"
+    title="เวลาเปิด-ปิด พระราชวังบางปะอิน"
+    lead="ข้อมูลเวลาเปิด-ปิด ค่าเข้าชม และวันหยุดของพระราชวังบางปะอิน จังหวัดพระนครศรีอยุธยา พร้อมวิธียืนยันก่อนเดินทาง"
+    faqs={faqs}
+    canonical={canonical}
+  >
+    <div class="rounded-2xl border border-gold/30 bg-white/50 p-6">
+      <p class="font-semibold text-teak">{guide.hours.time}</p>
+      <ul class="mt-3 space-y-2 text-sm text-ink/75">
+        {guide.hours.items.map((it: any) => (
+          <li class="flex justify-between gap-3 border-b border-gold/15 pb-2">
+            <span>{it.label}</span><span class="text-teak font-medium whitespace-nowrap">{it.value}</span>
+          </li>
+        ))}
+      </ul>
+      {guide.hours.verified && (
+        <p class="mt-3 text-xs text-ink/55 italic leading-relaxed">{guide.hours.verified}</p>
+      )}
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-teak mb-3">{guide.fees.title}</h2>
+      <ul class="space-y-2">
+        {guide.fees.items.map((it: any) => (
+          <li class="rounded-xl border border-gold/15 bg-white/50 p-4">
+            <p class="font-medium text-teak">{it.title}</p>
+            <p class="text-sm text-ink/70">{it.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <p class="text-sm text-ink/60">
+      ตรวจสอบเวลาและวันหยุดล่าสุดโดยโทร <a href={`tel:${siteConfig.phone}`} class="text-teak underline">{siteConfig.phoneDisplay}</a> ก่อนเดินทาง
+    </p>
+  </TopicPage>
+</BaseLayout>

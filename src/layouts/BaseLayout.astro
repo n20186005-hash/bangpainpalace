@@ -8,9 +8,13 @@ interface Props {
   title: string;
   description: string;
   messages: Record<string, any>;
+  jsonLd?: any;
+  canonicalOverride?: string;
+  noindex?: boolean;
+  alternates?: { hreflang: string; href: string }[];
 }
-const { lang, title, description, messages } = Astro.props;
-const canonical = `${siteConfig.domain}/${lang}/`;
+const { lang, title, description, messages, jsonLd: customJsonLd, canonicalOverride, noindex, alternates } = Astro.props;
+const canonical = canonicalOverride ?? `${siteConfig.domain}/${lang}/`;
 
 const faqs = (messages && messages.guide && messages.guide.faqs) ? messages.guide.faqs : [];
 
@@ -21,11 +25,12 @@ const alternateNames = Array.from(
       'พระราชวังบางปะอิน',
       'Summer Palace',
       '邦芭茵夏宫',
+      '邦巴因王宫',
     ]),
   ),
 ).filter((v, i, arr) => v !== siteConfig.name[lang] && arr.indexOf(v) === i);
 
-const jsonLd = [
+const defaultJsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
@@ -73,6 +78,13 @@ const jsonLd = [
     })),
   },
 ];
+
+const jsonLd = customJsonLd ?? defaultJsonLd;
+
+const hreflangLinks = alternates ?? [
+  ...languagesList.map((l) => ({ hreflang: htmlLang[l], href: `${siteConfig.domain}/${l}/` })),
+  { hreflang: 'x-default', href: `${siteConfig.domain}/th/` },
+];
 ---
 
 <!doctype html>
@@ -91,10 +103,10 @@ const jsonLd = [
     <meta property="og:image" content={`${siteConfig.domain}/gallery/bang-pa-in-palace-1.jpg`} />
     <meta property="og:url" content={canonical} />
     <meta name="twitter:card" content="summary_large_image" />
-    {languagesList.map((l) => (
-      <link rel="alternate" hreflang={htmlLang[l]} href={`${siteConfig.domain}/${l}/`} />
+    {noindex && <meta name="robots" content="noindex" />}
+    {hreflangLinks.map((a) => (
+      <link rel="alternate" hreflang={a.hreflang} href={a.href} />
     ))}
-    <link rel="alternate" hreflang="x-default" href={`${siteConfig.domain}/th/`} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

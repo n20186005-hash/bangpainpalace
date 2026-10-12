@@ -3,7 +3,7 @@ export const siteConfig = {
   name: {
     th: 'พระราชวังบางปะอิน',
     en: 'Bang Pa-In Palace',
-    zh: '邦巴因王宫',
+    zh: '邦芭茵夏宫',
   },
   nameLocal: 'พระราชวังบางปะอิน', // 当地（泰文）名称
   domain: process.env.CURRENT_SITE_DOMAIN ? `https://${process.env.CURRENT_SITE_DOMAIN}` : 'https://bangpainpalace.com',
@@ -12,7 +12,7 @@ export const siteConfig = {
   phoneDisplay: '+66 35 261 548',
 
   rating: 4.5,
-  reviewCount: '7,742',
+  reviewCount: '7,843',
 
   // 实际坐标（用于天气 / 日落 API 与地图嵌入）—— 邦巴因王宫（Bang Pa-In Palace，大城府）
   coords: { lat: 14.2302, lng: 100.5751 },

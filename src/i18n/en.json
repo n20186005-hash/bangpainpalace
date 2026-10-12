@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Bang Pa-In Palace (Ayutthaya) – Tickets, Dress Code & Opening Hours 2026",
-    "description": "Bang Pa-In Royal Palace (Summer Palace) visitor guide in Ayutthaya, Thailand: 2026 ticket price, strict dress code, opening hours, how to get from Bangkok, best photo spots, and golf cart rental."
+    "title": "Bang Pa-In Palace Guide | Hours, Tickets & Dress Code",
+    "description": "Plan your visit to Bang Pa-In Royal Palace in Ayutthaya. Explore opening hours, admission information, dress code, transport from Bangkok and must-see pavilions."
   },
   "header": {
     "home": "Home",
@@ -30,7 +30,7 @@
     "titleAccent": "Palace",
     "subtitle": "A riverside royal retreat where Thai, Chinese and European architecture meet — pavilions, gardens and a throne hall floating on a lotus pond.",
     "rating": "4.5",
-    "reviewCount": "7,742",
+    "reviewCount": "7,843",
     "coordsLabel": "Bang Pa-in, Phra Nakhon Si Ayutthaya",
     "cta1": "Plan your visit",
     "cta2": "Where to eat",
@@ -38,7 +38,7 @@
     "boardCategory": "Royal Palace",
     "boardTitle": "Bang Pa-In",
     "boardEn": "Summer Palace of the Kings of Siam",
-    "ngoBadge": "Independent NGO Guide | 100% Ad-Free",
+    "ngoBadge": "Independent Visitor Guide | 100% Ad-Free",
     "quickBadges": ["🏛️ Top 4 Thai Palaces", "🚗 1 Hour from Bangkok", "👗 Strict Dress Code"],
     "plannerTitle": "Golden Hour Planner",
     "liveWeather": "Live · Open-Meteo",
@@ -207,7 +207,8 @@
         { "label": "Tuesday – Sunday", "value": "Open" },
         { "label": "Monday", "value": "Closed" },
         { "label": "Last entry", "value": "15:30" }
-      ]
+      ],
+      "verified": "Opening hours follow the Tourism Authority of Thailand and were last checked October 2026. As a working royal palace, times may shift on public holidays — call +66 35 261 548 to confirm before you travel."
     },
     "fees": {
       "tag": "🎟️",
@@ -234,7 +235,7 @@
       "timesTitle": "Best light",
       "times": [
         { "period": "Morning 08–10", "desc": "Soft light, calm pond, few visitors — ideal for the Aisawan hall." },
-        { "period": "Golden hour 17–18", "desc": "Warm light on the European wings and the bridge." },
+        { "period": "Golden hour 17–18", "desc": "Warm light on the European wings, seen from the riverside public path outside the gated grounds (the palace itself closes at 16:00)." },
         { "period": "Overcast", "desc": "Even, shadow-free light that suits architecture details." }
       ],
       "spotsTitle": "Photo spots",
@@ -367,24 +368,18 @@
   "reviews": {
     "label": "Reviews",
     "heading": "What visitors say",
-    "intro": "Bang Pa-In Palace holds a 4.5/5 rating across thousands of Google reviews.",
+    "intro": "Bang Pa-In Palace holds a 4.5/5 rating across thousands of public Google reviews. The points below are an objective summary of themes visitors commonly mention — not verbatim quotes attributed to named individuals.",
     "disclaimer": "Aggregated from public Google reviews for reference.",
-    "declaration": "We are an independent, non-profit guide and are not affiliated with the palace or Google.",
-    "featured": [
-      { "text": "Easily one of the most beautiful palaces near Bangkok — the floating throne hall is unreal.", "source": "— Trip via Google" },
-      { "text": "Come early, wear light clothes, and take your time in the gardens. Worth every baht.", "source": "— Trip via Google" }
+    "declaration": "We are an independent, non-profit visitor guide and are not affiliated with the palace or Google.",
+    "themesTitle": "What visitors commonly mention",
+    "themes": [
+      "The Aisawan Thiphya-Art throne hall reflected in the lotus pond is the most photographed spot, especially just after opening.",
+      "Weekday mornings are repeatedly praised for calm light and thin crowds.",
+      "The blend of Thai, Chinese and European pavilions in one garden is often called the highlight.",
+      "The strict dress code is enforced at the gate, so most advise dressing before you arrive.",
+      "The free cable car across the river to Wat Niwet Thammaprawat is a popular add-on."
     ],
-    "items": [
-      { "text": "The Aisawan Throne Hall at 9am with the pond reflection is postcard-perfect.", "name": "Anong S.", "date": "2026-01", "rating": "5" },
-      { "text": "Loved the mix of Thai, Chinese and European buildings — like three palaces in one.", "name": "Tom B.", "date": "2025-12", "rating": "5" },
-      { "text": "Quiet on a Tuesday morning; we had the bridge to ourselves for photos.", "name": "Pim V.", "date": "2025-11", "rating": "5" },
-      { "text": "Wear light clothes — it gets hot by noon, but the gardens are shaded and lovely.", "name": "Jira W.", "date": "2025-10", "rating": "4" },
-      { "text": "The memorial to Queen Sunanda is moving; take a moment there.", "name": "Ken R.", "date": "2025-09", "rating": "5" },
-      { "text": "Easy half-day trip from Bangkok by train, then a short tuk-tuk to the gate.", "name": "Mai L.", "date": "2025-08", "rating": "5" },
-      { "text": "Beautiful but go early — by midday the light is harsh and it's busy.", "name": "Oil T.", "date": "2025-07", "rating": "4" },
-      { "text": "The Chinese mansion interior and the lookout tower view were the highlights for us.", "name": "Ning C.", "date": "2025-06", "rating": "5" }
-    ],
-    "viewLocation": "View location on Google Maps →"
+    "viewLocation": "View all reviews on Google Maps →"
   },
   "sources": {
     "label": "Sources & corrections",
@@ -650,7 +645,7 @@
         "icon": "📷",
         "name": "Photography & natural light",
         "pace": "Golden-hour focused · ~3–4 hrs",
-        "route": "07:45 arrive for parking → Bridge and Aisawan hall (08:05, empty reflection) → Withun Thatsana tower & spiral stairs → Uthayan Phumisathian terrace for backlight → Riverside golden-hour (17:00–17:45, Oct–Feb) → Cross cable car to Wat Niwet Thammaprawat",
+        "route": "07:45 arrive for parking → Bridge and Aisawan hall (08:05, empty reflection) → Withun Thatsana tower & spiral stairs → Uthayan Phumisathian terrace for backlight → Riverside golden-hour view from outside the grounds (17:00–17:45, Oct–Feb) → Cross cable car to Wat Niwet Thammaprawat",
         "highlights": ["Low-angle polariser shot from the bridge, 24–35mm", "Midday cover: Wehart Chamrun interiors & marble statues", "Bring a cloth to wipe dew on the bridge rail before 08:30"],
         "bestFor": "Travel photographers, couples, landscape and architectural visitors"
       },

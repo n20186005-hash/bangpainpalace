@@ -1,0 +1,83 @@
+---
+import { getI18n, htmlLang } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPage from '../../components/TopicPage.astro';
+
+const { lang, messages } = await getI18n(Astro.url);
+const guide = messages.guide;
+const slug = 'tickets-opening-hours';
+const canonical = `${siteConfig.domain}/${lang}/${slug}/`;
+
+const faqs = [
+  {
+    q: 'What are the opening hours of Bang Pa-In Palace?',
+    a: 'Open Tuesday to Sunday, 08:00–16:00 (last entry 15:30). Closed every Monday.',
+  },
+  {
+    q: 'How much is admission to Bang Pa-In Palace?',
+    a: 'Foreign adults pay 100 THB, which covers the grounds and pavilions. Thai nationals enter free with ID. There is no extra camera fee, and a sarong is lent free at the gate.',
+  },
+  {
+    q: 'Is Bang Pa-In Palace open on Monday?',
+    a: 'No. It is closed every Monday and may also close on certain public holidays, since it remains a working royal palace.',
+  },
+  {
+    q: 'How can I confirm the hours before I travel?',
+    a: 'Call +66 35 261 548, especially around public holidays, as times can shift.',
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title="Bang Pa-In Palace Tickets & Opening Hours"
+  description="Admission price, opening hours and the Monday closure for Bang Pa-In Royal Palace in Ayutthaya, with how to confirm before you travel."
+  messages={messages}
+  canonicalOverride={canonical}
+  alternates={[
+    { hreflang: htmlLang[lang], href: canonical },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+  jsonLd={[]}
+>
+  <TopicPage
+    lang={lang}
+    messages={messages}
+    breadcrumbLabel="Tickets & Opening Hours"
+    title="Bang Pa-In Palace Tickets & Opening Hours"
+    lead="Admission, opening hours and closure rules for Bang Pa-In Royal Palace in Ayutthaya — with a note on how to confirm before you travel."
+    faqs={faqs}
+    canonical={canonical}
+  >
+    <div class="rounded-2xl border border-gold/30 bg-white/50 p-6">
+      <p class="font-semibold text-teak">{guide.hours.time}</p>
+      <ul class="mt-3 space-y-2 text-sm text-ink/75">
+        {guide.hours.items.map((it: any) => (
+          <li class="flex justify-between gap-3 border-b border-gold/15 pb-2">
+            <span>{it.label}</span><span class="text-teak font-medium whitespace-nowrap">{it.value}</span>
+          </li>
+        ))}
+      </ul>
+      {guide.hours.verified && (
+        <p class="mt-3 text-xs text-ink/55 italic leading-relaxed">{guide.hours.verified}</p>
+      )}
+    </div>
+
+    <div>
+      <h2 class="font-display text-xl text-teak mb-3">{guide.fees.title}</h2>
+      <ul class="space-y-2">
+        {guide.fees.items.map((it: any) => (
+          <li class="rounded-xl border border-gold/15 bg-white/50 p-4">
+            <p class="font-medium text-teak">{it.title}</p>
+            <p class="text-sm text-ink/70">{it.desc}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <p class="text-sm text-ink/60">
+      Confirm the latest times and closures by calling <a href={`tel:${siteConfig.phone}`} class="text-teak underline">{siteConfig.phoneDisplay}</a> before you travel.
+    </p>
+  </TopicPage>
+</BaseLayout>

@@ -1,0 +1,64 @@
+---
+import type { Lang } from '../i18n/ui';
+import { siteConfig } from '../config';
+
+interface Props {
+  lang: Lang;
+  messages: Record<string, any>;
+  breadcrumbLabel: string;
+  title: string;
+  lead: string;
+  faqs: { q: string; a: string }[];
+  canonical: string;
+}
+const { lang, messages, breadcrumbLabel, title, lead, faqs, canonical } = Astro.props;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: siteConfig.name[lang], item: `${siteConfig.domain}/${lang}/` },
+      { '@type': 'ListItem', position: 2, name: breadcrumbLabel, item: canonical },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+
+const faqTitle = (messages.guide && messages.guide.faqTitle) ? messages.guide.faqTitle : 'FAQ';
+---
+
+<article class="bg-ivory text-ink">
+  <div class="mx-auto max-w-3xl px-5 py-12">
+    <nav aria-label="breadcrumb" class="mb-6 text-sm text-ink/55">
+      <a href={`/${lang}/`} class="hover:text-teak">{siteConfig.name[lang]}</a>
+      <span class="mx-2">/</span>
+      <span class="text-ink/80">{breadcrumbLabel}</span>
+    </nav>
+
+    <h1 class="font-display text-3xl md:text-4xl text-teak leading-tight">{title}</h1>
+    <p class="mt-4 text-ink/75 leading-relaxed">{lead}</p>
+
+    <div class="mt-8 space-y-10">
+      <slot />
+    </div>
+
+    <section id="faq" class="mt-12">
+      <h2 class="font-display text-2xl text-teak">{faqTitle}</h2>
+      <div class="mt-4 divide-y divide-gold/15 border-t border-gold/15">
+        {faqs.map((f) => (
+          <details class="py-4">
+            <summary class="cursor-pointer font-medium text-teak">{f.q}</summary>
+            <p class="mt-2 text-ink/75 leading-relaxed">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  </div>
+</article>
+
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

@@ -1,0 +1,55 @@
+---
+import { getI18n, htmlLang } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPage from '../../components/TopicPage.astro';
+import Ecosystem from '../../components/Ecosystem.astro';
+
+const { lang, messages } = await getI18n(Astro.url);
+const slug = 'architecture';
+const canonical = `${siteConfig.domain}/${lang}/${slug}/`;
+
+const faqs = [
+  {
+    q: 'What architectural styles are at Bang Pa-In Palace?',
+    a: 'The palace blends Thai (Rattanakosin), Chinese and European styles — from the Thai Aisawan Thiphya-Art throne hall and the Chinese Wehart Chamrun mansion to Neo-classical and Neo-Renaissance halls, an Italianate lookout tower and marble busts.',
+  },
+  {
+    q: 'Which pavilions should I not miss?',
+    a: 'The Aisawan Thiphya-Art throne hall floating in the lotus pond, the two-storey Chinese-style Wehart Chamrun mansion, the Withun Thatsana lookout tower, the Warophat Phiman reception hall and the Neo-Renaissance island pavilion Uthayan Phumisathian.',
+  },
+  {
+    q: 'Who built Bang Pa-In Palace?',
+    a: 'Founded in 1632 by King Prasat Thong, abandoned after the fall of Ayutthaya in 1767, and rebuilt as a summer seat by King Chulalongkorn (Rama V) between 1872 and 1889 with Thai, Chinese and European builders.',
+  },
+  {
+    q: 'Why is the Chinese mansion significant?',
+    a: 'Wehart Chamrun was presented to King Rama V by the overseas Chinese chamber of commerce. It uses a traditional teak mortise-and-tenon structure without a single iron nail — a testament to Thai-Chinese craft and diplomacy.',
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title="Bang Pa-In Palace Architecture & Pavilions"
+  description="The Thai, Chinese and European pavilions of Bang Pa-In Royal Palace in Ayutthaya, and the story behind its eclectic architecture."
+  messages={messages}
+  canonicalOverride={canonical}
+  alternates={[
+    { hreflang: htmlLang[lang], href: canonical },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+  jsonLd={[]}
+>
+  <TopicPage
+    lang={lang}
+    messages={messages}
+    breadcrumbLabel="Architecture"
+    title="Bang Pa-In Palace Architecture"
+    lead="How Thai, Chinese and European design meet in one riverside garden — and the key pavilions worth your time."
+    faqs={faqs}
+    canonical={canonical}
+  >
+    <Ecosystem messages={messages} />
+  </TopicPage>
+</BaseLayout>

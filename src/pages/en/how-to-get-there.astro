@@ -1,0 +1,55 @@
+---
+import { getI18n, htmlLang } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPage from '../../components/TopicPage.astro';
+import TransportHub from '../../components/TransportHub.astro';
+
+const { lang, messages } = await getI18n(Astro.url);
+const slug = 'how-to-get-there';
+const canonical = `${siteConfig.domain}/${lang}/${slug}/`;
+
+const faqs = [
+  {
+    q: 'How do I get from Bangkok to Bang Pa-In Palace?',
+    a: 'The most common options are a train from Bangkok to Bang Pa-in station (about 1 hour, then a short tuk-tuk), a private taxi or Grab (60–75 minutes via Phahonyothin / Asian Highway), or a guided Ayutthaya day tour that includes the palace.',
+  },
+  {
+    q: 'How do I get from Ayutthaya to the palace?',
+    a: 'It is 15–20 minutes by car, songthaew or tour from Ayutthaya town; most visitors combine the two.',
+  },
+  {
+    q: 'Is the palace far from the train station?',
+    a: 'Bang Pa-in station is a short tuk-tuk or bicycle ride from the gate — about 3–5 km. Agree the fare before boarding.',
+  },
+  {
+    q: 'Can I visit Bang Pa-In and Ayutthaya historical park in one day?',
+    a: 'Yes. Many travellers pair the palace with Ayutthaya\'s ruins; start at the palace in the morning to beat the heat, then move on to the historical park.',
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title="How to Get to Bang Pa-In Palace from Bangkok"
+  description="Trains, taxis and tours from Bangkok to Bang Pa-In Royal Palace in Ayutthaya, plus the last leg from the station to the gate."
+  messages={messages}
+  canonicalOverride={canonical}
+  alternates={[
+    { hreflang: htmlLang[lang], href: canonical },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+  jsonLd={[]}
+>
+  <TopicPage
+    lang={lang}
+    messages={messages}
+    breadcrumbLabel="How to Get There"
+    title="How to Get to Bang Pa-In Palace"
+    lead="Four practical ways to reach Bang Pa-In Royal Palace from Bangkok and Ayutthaya, including the short final leg to the gate."
+    faqs={faqs}
+    canonical={canonical}
+  >
+    <TransportHub lang={lang} messages={messages} />
+  </TopicPage>
+</BaseLayout>

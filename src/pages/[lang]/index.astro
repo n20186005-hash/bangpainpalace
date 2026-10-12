@@ -19,6 +19,7 @@ import SeasonalTable from '../../components/SeasonalTable.astro';
   import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
+import TopicLinks from '../../components/TopicLinks.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
 import MobileStickyCTA from '../../components/MobileStickyCTA.astro';
@@ -43,6 +44,7 @@ const { lang, messages } = await getI18n(Astro.url);
     <TransportHub lang={lang} messages={messages} />
     <SeasonalTable lang={lang} messages={messages} />
     <Guide messages={messages} />
+    <TopicLinks lang={lang} />
     <AudienceRoutes lang={lang} messages={messages} />
     <ClassicRoutes lang={lang} messages={messages} />
     <Amenities lang={lang} messages={messages} />

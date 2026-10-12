@@ -1,0 +1,39 @@
+---
+import type { Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const links: Record<Lang, { href: string; title: string; desc: string }[]> = {
+  th: [
+    { href: '/th/opening-hours/', title: 'เวลาเปิด-ปิด', desc: 'เปิด-ปิด ค่าเข้า และวันหยุด' },
+    { href: '/th/dress-code/', title: 'การแต่งกาย', desc: 'กฎการแต่งกายและการยืมโสร่ง' },
+  ],
+  en: [
+    { href: '/en/tickets-opening-hours/', title: 'Tickets & Opening Hours', desc: 'Admission, hours and Monday closure' },
+    { href: '/en/how-to-get-there/', title: 'How to Get There', desc: 'Trains, taxis and tours from Bangkok' },
+    { href: '/en/architecture/', title: 'Architecture', desc: 'Thai, Chinese and European pavilions' },
+  ],
+  zh: [],
+};
+const items = links[lang] ?? [];
+---
+
+{items.length > 0 && (
+  <section class="mx-auto max-w-5xl px-4 py-12">
+    <h2 class="font-display text-2xl text-teak mb-5">แหล่งข้อมูลเพิ่มเติม · More guides</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {items.map((it) => (
+        <a
+          href={it.href}
+          class="block rounded-2xl border border-gold/25 bg-white/60 p-5 transition-colors hover:border-gold hover:bg-cream/60"
+        >
+          <p class="font-display text-lg text-teak">{it.title}</p>
+          <p class="mt-1 text-sm text-ink/65">{it.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+)}

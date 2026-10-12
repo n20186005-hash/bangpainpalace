@@ -21,47 +21,28 @@ const stars = (r: string) => {
     <p class="mt-4 max-w-2xl text-ivory/80">{reviews.intro}</p>
 
     <div class="mt-8 flex flex-wrap items-center gap-4">
-      <span class="stars text-2xl">{stars(siteConfig.rating)}</span>
+      <span class="stars text-2xl">{stars(String(siteConfig.rating))}</span>
       <span class="font-display text-2xl text-goldBright">{siteConfig.rating}</span>
-      <span class="text-ivory/70">{reviews.disclaimer}</span>
-    </div>
-    <p class="mt-2 text-xs text-ivory/50">{reviews.declaration}</p>
-
-    <div class="grid md:grid-cols-2 gap-4 mt-8">
-      {reviews.featured.map((f) => (
-        <div class="rounded-2xl bg-teak/60 border border-gold/20 p-6 italic font-display text-lg">
-          “{f.text}”
-          <div class="not-italic text-sm text-goldBright mt-3">{f.source}</div>
-        </div>
-      ))}
+      <span class="text-ivory/70">{siteConfig.reviewCount} Google reviews</span>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-      {reviews.items.map((r) => {
-        // Parse tag format like "[最佳美食: 船面] text"
-        let tag = '';
-        let content = r.text;
-        const match = r.text.match(/^\[(.*?)\]\s*(.*)/);
-        if (match) {
-          tag = match[1];
-          content = match[2];
-        }
+    {reviews.themes && (
+      <div class="mt-10">
+        {reviews.themesTitle && (
+          <h3 class="font-display text-xl text-goldBright mb-4">{reviews.themesTitle}</h3>
+        )}
+        <ul class="grid md:grid-cols-2 gap-4">
+          {reviews.themes.map((t: string) => (
+            <li class="rounded-xl bg-teak/50 border border-gold/15 p-4 flex gap-3 text-ivory/85 leading-relaxed">
+              <span class="text-gold mt-1" aria-hidden="true">•</span>
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
 
-        return (
-          <div class="rounded-xl bg-teak/50 border border-gold/15 p-4 flex flex-col">
-            <div class="flex items-center justify-between">
-              <div class="stars text-sm">{stars(r.rating)}</div>
-              {tag && <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/20 text-goldBright border border-gold/30">{tag}</span>}
-            </div>
-            <p class="text-sm text-ivory/85 mt-3 flex-1 leading-relaxed">{content}</p>
-            <div class="mt-4 pt-3 border-t border-gold/10 flex items-center justify-between text-xs text-ivory/60">
-              <span class="text-goldBright font-medium">{r.name}</span>
-              <span>{r.date}</span>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+    <p class="mt-6 text-xs text-ivory/50">{reviews.declaration}</p>
 
     <div class="mt-10 text-center">
       <a href={mapsUrl} target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-ivory border border-gold/50 px-6 py-3 rounded-full hover:bg-gold hover:text-teak transition-colors">

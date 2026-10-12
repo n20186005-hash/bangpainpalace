@@ -1,0 +1,55 @@
+---
+import { getI18n, htmlLang } from '../../i18n/ui';
+import { siteConfig } from '../../config';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TopicPage from '../../components/TopicPage.astro';
+import StrictDressCode from '../../components/StrictDressCode.astro';
+
+const { lang, messages } = await getI18n(Astro.url);
+const slug = 'dress-code';
+const canonical = `${siteConfig.domain}/${lang}/${slug}/`;
+
+const faqs = [
+  {
+    q: 'พระราชวังบางปะอิน ใส่กางเกงขาสั้นได้ไหม?',
+    a: 'ไม่ได้ ต้องปกปิดไหล่และเหนือเข่า ห้ามกางเกงขาสั้น กางเกงขายาวหรือกระโปรงยาวถึงเข่าขึ้นไปจึงผ่าน',
+  },
+  {
+    q: 'มีบริการยืมชุดที่ประตูไหม?',
+    a: 'มี ยืมโสร่งฟรีที่ประตูสำหรับผู้ที่แต่งกายไม่เหมาะสม แต่ควรแต่งให้พร้อมก่อนมาถึงเพื่อไม่ให้เสียเวลา',
+  },
+  {
+    q: 'ใส่เสื้อกล้ามหรือเสื้อแขนกุดได้ไหม?',
+    a: 'ไม่ได้ ต้องปกปิดไหล่ ห้ามเสื้อแขนกุดและเสื้อที่เปิดไหล่',
+  },
+  {
+    q: 'ทำไมถึงเคร่งครัดนัก?',
+    a: 'เพราะยังเป็นเขตพระราชฐานที่ใช้งานจริง ไม่ใช่สวนสาธารณะทั่วไป เจ้าหน้าที่มีสิทธิ์ไม่อนุญาตให้เข้าได้หากแต่งกายไม่เหมาะสม',
+  },
+];
+---
+
+<BaseLayout
+  lang={lang}
+  title="การแต่งกาย พระราชวังบางปะอิน | เงื่อนไขและการยืมโสร่ง"
+  description="กฎการแต่งกายสำหรับพระราชวังบางปะอิน สิ่งที่ใส่ได้และไม่ได้ พร้อมบริการยืมโสร่งฟรีที่ประตู"
+  messages={messages}
+  canonicalOverride={canonical}
+  alternates={[
+    { hreflang: htmlLang[lang], href: canonical },
+    { hreflang: 'x-default', href: canonical },
+  ]}
+  jsonLd={[]}
+>
+  <TopicPage
+    lang={lang}
+    messages={messages}
+    breadcrumbLabel="การแต่งกาย"
+    title="การแต่งกาย พระราชวังบางปะอิน"
+    lead="พระราชวังบางปะอินยังคงเป็นเขตพระราชฐานที่ใช้งานจริง จึงมีการบังคับใช้เครื่องแต่งกายอย่างเคร่งครัด ตรวจสอบรายการก่อนเดินทาง"
+    faqs={faqs}
+    canonical={canonical}
+  >
+    <StrictDressCode lang={lang} messages={messages} />
+  </TopicPage>
+</BaseLayout>
