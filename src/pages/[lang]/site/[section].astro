@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Footer from '../../../components/Footer.astro';
+import Reviews from '../../../components/Reviews.astro';
+import Sources from '../../../components/Sources.astro';
+import { siteConfig } from '../../../config';
+import { getI18n, languagesList, type Lang } from '../../../i18n/ui';
+
+export const prerender = true;
+export function getStaticPaths() {
+  return languagesList.flatMap(lang => ['about','sources','reviews'].map(section => ({ params: { lang, section } })));
+}
+const { lang, messages } = await getI18n(Astro.url);
+const { section } = Astro.params;
+const titles = {
+  zh: { about: '关于本指南', sources: '资料来源与更正', reviews: '游客评分与评价' },
+  th: { about: 'เกี่ยวกับคู่มือ', sources: 'แหล่งข้อมูลและการแก้ไข', reviews: 'คะแนนและรีวิวผู้มาเยือน' },
+  en: { about: 'About this guide', sources: 'Sources and corrections', reviews: 'Visitor ratings and reviews' },
+};
+const pageTitle = titles[lang as Lang][section as 'about'|'sources'|'reviews'];
+const info = {
+  zh: {
+    independent: '这是一个独立的非营利旅游信息项目，介绍泰国大城府邦芭茵夏宫的历史、建筑与参观安排。',
+    unofficial: '本站不是皇室或宫殿官方网站，与任何政府机构、皇室组织及 Google 均无关联；本站不出售门票。',
+    notes: '本站说明', weather: '天气资料：Open-Meteo；地图与导航：Google 地图。旅行信息可能变化，出行前请以现场和主管单位公告为准。',
+    facts: '资料与图片', sourceIntro: '本指南使用公开旅游资料与景点介绍作为参考；原有图片及其来源说明保留在资料页面。',
+    legal: '其他站点文件', privacy:'隐私政策', terms:'服务条款',cookies:'Cookie 设置',
+    sourceLinks:'公开参考门户', home:'返回夏宫首页'
+  },
+  th: {
+    independent: 'โครงการข้อมูลท่องเที่ยวอิสระไม่แสวงหากำไร แนะนำประวัติศาสตร์ สถาปัตยกรรม และการเที่ยวชมพระราชวังบางปะอิน จังหวัดพระนครศรีอยุธยา',
+    unofficial: 'เว็บไซต์นี้ไม่ใช่เว็บไซต์ทางการของสำนักพระราชวังหรือพระราชวัง และไม่มีความเกี่ยวข้องกับหน่วยงานรัฐบาล องค์กรราชสำนัก หรือ Google อีกทั้งไม่จำหน่ายบัตรเข้าชม',
+    notes:'หมายเหตุเกี่ยวกับคู่มือ',weather:'ข้อมูลอากาศ: Open-Meteo; แผนที่และการนำทาง: Google Maps ข้อมูลท่องเที่ยวอาจเปลี่ยนแปลง ควรตรวจสอบประกาศทางการและหน้างานก่อนเดินทาง',
+    facts:'ข้อมูลและรูปภาพ',sourceIntro:'เนื้อหาคู่มืออ้างอิงข้อมูลท่องเที่ยวและรายละเอียดสถานที่ที่เปิดเผยต่อสาธารณะ ส่วนภาพและแหล่งที่มาดูได้ในหน้าแหล่งข้อมูล',
+    legal:'เอกสารของเว็บไซต์',privacy:'นโยบายความเป็นส่วนตัว',terms:'ข้อกำหนดการใช้บริการ',cookies:'การตั้งค่าคุกกี้',
+    sourceLinks:'แหล่งข้อมูลสาธารณะ',home:'กลับหน้าหลักพระราชวัง'
+  },
+  en: {
+    independent:'An independent, non-profit travel information project explaining the history, architecture and visitor experience of Bang Pa-In Royal Palace in Ayutthaya, Thailand.',
+    unofficial:'This is not an official royal or palace website. We are not affiliated with any government agency, royal organization or Google, and we do not sell tickets.',
+    notes:'About this guide',weather:'Weather information: Open-Meteo; maps and navigation: Google Maps. Visitor details may change: verify official and on-site notices before travel.',
+    facts:'Information and photography',sourceIntro:'This guide draws on publicly available tourism resources and attraction context. Image information and credits are retained on the sources page.',
+    legal:'Other site documents',privacy:'Privacy policy',terms:'Terms of service',cookies:'Cookie settings',
+    sourceLinks:'Public reference portals',home:'Back to palace homepage'
+  }
+}[lang as Lang];
+const path = (s: string) => `/${lang}/site/${s}/`;
+const canonical = `${siteConfig.domain}${path(section!)}`;
+---
+<BaseLayout lang={lang} messages={messages} title={`${pageTitle} | ${siteConfig.name[lang]}`} description={pageTitle} canonicalOverride={canonical} alternates={languagesList.map(l=>({hreflang:l,href:`${siteConfig.domain}/${l}/site/${section}/`}))}>
+  <main class="bg-ivory min-h-screen text-ink">
+    <div class="max-w-5xl mx-auto px-5 pt-10">
+      <a class="text-sm text-teak underline" href={`/${lang}/`}>{info.home}</a>
+      <nav class="mt-6 flex flex-wrap gap-3" aria-label={pageTitle}>
+        {(['about','reviews','sources'] as const).map(s => <a class={`rounded-full border px-4 py-2 text-sm ${s === section ? 'bg-teak text-ivory border-teak' : 'border-gold/50 text-teak hover:bg-gold/10'}`} href={path(s)}>{titles[lang as Lang][s]}</a>)}
+      </nav>
+    </div>
+    {section === 'about' && <article class="max-w-5xl mx-auto px-5 py-12 leading-relaxed">
+      <h1 class="font-display text-4xl text-teak">{pageTitle}</h1>
+      <p class="font-display text-xl text-teak/85 mt-4">{siteConfig.name[lang]} · {messages.footer.brand.tagline}</p>
+      <p class="mt-6 text-lg">{info.independent}</p>
+      <p class="mt-4">{info.unofficial}</p>
+      <section class="mt-9 bg-white/70 rounded-2xl border border-gold/25 p-7"><h2 class="font-display text-2xl text-teak">{info.notes}</h2><p class="mt-3">{info.weather}</p></section>
+      <section class="mt-9"><h2 class="font-display text-2xl text-teak">{info.facts}</h2><p class="mt-3">{info.sourceIntro} <a class="text-teak underline" href={path('sources')}>{titles[lang as Lang].sources}</a></p></section>
+    </article>}
+    {section === 'reviews' && <Reviews messages={messages} />}
+    {section === 'sources' && <><Sources messages={messages} /><section class="bg-ivory py-12"><div class="max-w-5xl mx-auto px-5"><h2 class="font-display text-2xl text-teak">{info.sourceLinks}</h2><ul class="mt-5 grid gap-3 md:grid-cols-2">{siteConfig.sources.map(s=><li><a class="text-teak underline" href={s.url} target="_blank" rel="noopener noreferrer">{s.name[lang]} ↗</a></li>)}</ul><p class="mt-8 text-sm text-ink/70">{info.weather}</p></div></section></>}
+    <section class="bg-ivory pb-12"><div class="max-w-5xl mx-auto px-5 border-t border-gold/20 pt-7"><h2 class="font-display text-xl text-teak">{info.legal}</h2><div class="mt-3 flex flex-wrap gap-5 text-sm">{[['privacy-policy',info.privacy],['terms-of-service',info.terms],['cookie-settings',info.cookies]].map(([url,label])=><a class="text-teak underline" href={`/${lang}/${url}/`}>{label}</a>)}</div></div></section>
+  </main>
+  <Footer lang={lang} messages={messages} />
+</BaseLayout>

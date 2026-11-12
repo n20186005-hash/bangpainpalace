@@ -15,10 +15,8 @@ import SeasonalTable from '../../components/SeasonalTable.astro';
   import ClassicRoutes from '../../components/ClassicRoutes.astro';
   import Amenities from '../../components/Amenities.astro';
   import Responsibility from '../../components/Responsibility.astro';
-  import Sources from '../../components/Sources.astro';
   import Food from '../../components/Food.astro';
 import Gallery from '../../components/Gallery.astro';
-import Reviews from '../../components/Reviews.astro';
 import TopicLinks from '../../components/TopicLinks.astro';
 import MapSection from '../../components/MapSection.astro';
 import Footer from '../../components/Footer.astro';
@@ -51,8 +49,15 @@ const { lang, messages } = await getI18n(Astro.url);
     <Responsibility lang={lang} messages={messages} />
     <Food messages={messages} />
     <Gallery messages={messages} />
-    <Reviews messages={messages} />
-    <Sources messages={messages} />
+    <section class="bg-teakDeep text-ivory py-10" aria-label={lang === 'zh' ? '站点资料' : lang === 'th' ? 'ข้อมูลเว็บไซต์' : 'Site information'}>
+      <div class="max-w-5xl mx-auto px-5 grid gap-3 sm:grid-cols-3 text-center">
+        {[
+          { key: 'about', title: lang === 'zh' ? '关于本指南' : lang === 'th' ? 'เกี่ยวกับคู่มือ' : 'About this guide' },
+          { key: 'reviews', title: lang === 'zh' ? '游客评价' : lang === 'th' ? 'รีวิวผู้มาเยือน' : 'Visitor reviews' },
+          { key: 'sources', title: lang === 'zh' ? '资料来源与更正' : lang === 'th' ? 'แหล่งข้อมูลและการแก้ไข' : 'Sources and corrections' },
+        ].map((link) => <a class="rounded-xl border border-gold/30 p-4 text-goldBright hover:bg-ivory/10 transition-colors" href={`/${lang}/site/${link.key}/`}>{link.title} ↗</a>)}
+      </div>
+    </section>
     <MapSection lang={lang} messages={messages} />
   </main>
   <Footer lang={lang} messages={messages} />

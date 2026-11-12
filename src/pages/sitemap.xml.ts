@@ -24,7 +24,8 @@ const topicUrls = topics.map((t) => {
 });
 
 const expandedUrls = expandedGuides.flatMap(([slug]) => languagesList.map(lang => ({ loc: `${siteConfig.domain}/${lang}/guides/${slug}/`, alternates: languagesList.map(l => ({ hreflang: htmlLang[l], href: `${siteConfig.domain}/${l}/guides/${slug}/` })) })));
-const urls = [...home, ...topicUrls, ...expandedUrls];
+const siteInfoUrls = ['about', 'sources', 'reviews'].flatMap(section => languagesList.map(lang => ({ loc: `${siteConfig.domain}/${lang}/site/${section}/`, alternates: languagesList.map(l => ({ hreflang: htmlLang[l], href: `${siteConfig.domain}/${l}/site/${section}/` })) })));
+const urls = [...home, ...topicUrls, ...expandedUrls, ...siteInfoUrls];
 
 export const GET: APIRoute = () => {
   const xml =
