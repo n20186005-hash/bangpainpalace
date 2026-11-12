@@ -1,6 +1,7 @@
 ---
 import type { Lang } from '../i18n/ui';
 import { expandedGuides } from '../data/expandedGuides';
+import { zhGuides, thGuides } from '../data/guideTranslations';
 
 interface Props {
   lang: Lang;
@@ -22,7 +23,7 @@ const links: Record<Lang, { href: string; title: string; desc: string }[]> = {
 const items = links[lang] ?? [];
 ---
 
-{items.length > 0 && (
+{(items.length > 0 || lang === 'zh') && (
   <section class="mx-auto max-w-5xl px-4 py-12">
     <h2 id="more-guides" class="font-display text-2xl text-teak mb-5">{lang === 'th' ? 'คู่มือเพิ่มเติม' : lang === 'zh' ? '更多旅行指南' : 'More visitor guides'}</h2>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,7 +37,7 @@ const items = links[lang] ?? [];
         </a>
       ))}
     </div>
-    {lang === 'en' && <div class="mt-8"><h3 class="font-display text-xl text-teak mb-4">Explore the palace and nearby Ayutthaya</h3><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{expandedGuides.map(([slug, title, tagline]) => <a class="block rounded-xl bg-white/70 border border-gold/20 p-4 hover:border-gold" href={`/en/guides/${slug}/`}><span class="block text-teak font-semibold">{title}</span><span class="block text-sm text-ink/65 mt-1">{tagline}</span></a>)}</div></div>}
+    <div class="mt-8"><h3 class="font-display text-xl text-teak mb-4">{lang === 'zh' ? '探索夏宫与大城周边景点' : lang === 'th' ? 'สำรวจพระราชวังและสถานที่ใกล้อยุธยา' : 'Explore the palace and nearby Ayutthaya'}</h3><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{expandedGuides.map(([slug, title, tagline]) => { const copy = lang === 'zh' ? zhGuides[slug] : lang === 'th' ? thGuides[slug] : [title,tagline]; return <a class="block rounded-xl bg-white/70 border border-gold/20 p-4 hover:border-gold" href={`/${lang}/guides/${slug}/`}><span class="block text-teak font-semibold">{copy[0]}</span><span class="block text-sm text-ink/65 mt-1">{copy[1]}</span></a> })}</div></div>
     {lang === 'en' && <div id="nearby-exploration" class="mt-12 rounded-3xl border border-gold/30 bg-cream/60 p-6 md:p-8"><h3 class="font-display text-2xl text-teak">Nearby places to explore</h3><p class="mt-2 text-ink/70">Pair the summer palace with a separate temple visit or the ruins of historic Ayutthaya. Each stop has its own navigation target.</p><div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[
       ['wat-niwet-thammaprawat','Wat Niwet Thammaprawat','Gothic-style Buddhist temple across the river'],
       ['ayutthaya-historical-park','Ayutthaya Historical Park','The UNESCO-listed former capital'],

@@ -38,7 +38,7 @@ const structuredData = [
 ];
 ---
 
-<BaseLayout lang="en" messages={messages} title={`${title} | Bang Pa-In Palace Visitor Guide`} description={`${tagline}. Practical context, a walking plan, photography advice and verified reference links.`} canonicalOverride={canonical} alternates={[{ hreflang: 'en', href: canonical }]} jsonLd={structuredData}>
+<BaseLayout lang="en" messages={messages} title={`${title} | Bang Pa-In Palace Visitor Guide`} description={`${tagline}. Practical context, a walking plan, photography advice and verified reference links.`} canonicalOverride={canonical} alternates={(['en','th','zh'] as const).map(l => ({ hreflang: l, href: `${siteConfig.domain}/${l}/guides/${slug}/` }))} jsonLd={structuredData}>
   <main class="bg-ivory text-ink min-h-screen">
     <article class="mx-auto max-w-5xl px-5 py-10 md:py-16">
       <nav class="text-sm text-ink/65 mb-8" aria-label="Breadcrumb"><a href="/en/" class="hover:text-teak">Bang Pa-In Palace</a> / <a href="/en/#more-guides" class="hover:text-teak">Guides</a> / {title}</nav>

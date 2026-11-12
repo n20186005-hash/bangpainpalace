@@ -23,7 +23,7 @@ const topicUrls = topics.map((t) => {
   return { loc, alternates: [{ hreflang: htmlLang[t.lang], href: loc }, { hreflang: 'x-default', href: loc }] };
 });
 
-const expandedUrls = expandedGuides.map(([slug]) => ({ loc: `${siteConfig.domain}/en/guides/${slug}/`, alternates: [{ hreflang: 'en', href: `${siteConfig.domain}/en/guides/${slug}/` }] }));
+const expandedUrls = expandedGuides.flatMap(([slug]) => languagesList.map(lang => ({ loc: `${siteConfig.domain}/${lang}/guides/${slug}/`, alternates: languagesList.map(l => ({ hreflang: htmlLang[l], href: `${siteConfig.domain}/${l}/guides/${slug}/` })) })));
 const urls = [...home, ...topicUrls, ...expandedUrls];
 
 export const GET: APIRoute = () => {
