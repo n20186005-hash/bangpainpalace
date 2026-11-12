@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { siteConfig } from '../config';
 import { languagesList, htmlLang, type Lang } from '../i18n/ui';
+import { expandedGuides } from '../data/expandedGuides';
 
 const home = languagesList.map((l) => ({
   loc: `${siteConfig.domain}/${l}/`,
@@ -22,7 +23,8 @@ const topicUrls = topics.map((t) => {
   return { loc, alternates: [{ hreflang: htmlLang[t.lang], href: loc }, { hreflang: 'x-default', href: loc }] };
 });
 
-const urls = [...home, ...topicUrls];
+const expandedUrls = expandedGuides.map(([slug]) => ({ loc: `${siteConfig.domain}/en/guides/${slug}/`, alternates: [{ hreflang: 'en', href: `${siteConfig.domain}/en/guides/${slug}/` }] }));
+const urls = [...home, ...topicUrls, ...expandedUrls];
 
 export const GET: APIRoute = () => {
   const xml =

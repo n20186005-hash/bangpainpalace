@@ -1,5 +1,6 @@
 ---
 import type { Lang } from '../i18n/ui';
+import { expandedGuides } from '../data/expandedGuides';
 
 interface Props {
   lang: Lang;
@@ -23,7 +24,7 @@ const items = links[lang] ?? [];
 
 {items.length > 0 && (
   <section class="mx-auto max-w-5xl px-4 py-12">
-    <h2 class="font-display text-2xl text-teak mb-5">แหล่งข้อมูลเพิ่มเติม · More guides</h2>
+    <h2 id="more-guides" class="font-display text-2xl text-teak mb-5">{lang === 'th' ? 'คู่มือเพิ่มเติม' : lang === 'zh' ? '更多旅行指南' : 'More visitor guides'}</h2>
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((it) => (
         <a
@@ -35,5 +36,12 @@ const items = links[lang] ?? [];
         </a>
       ))}
     </div>
+    {lang === 'en' && <div class="mt-8"><h3 class="font-display text-xl text-teak mb-4">Explore the palace and nearby Ayutthaya</h3><div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{expandedGuides.map(([slug, title, tagline]) => <a class="block rounded-xl bg-white/70 border border-gold/20 p-4 hover:border-gold" href={`/en/guides/${slug}/`}><span class="block text-teak font-semibold">{title}</span><span class="block text-sm text-ink/65 mt-1">{tagline}</span></a>)}</div></div>}
+    {lang === 'en' && <div id="nearby-exploration" class="mt-12 rounded-3xl border border-gold/30 bg-cream/60 p-6 md:p-8"><h3 class="font-display text-2xl text-teak">Nearby places to explore</h3><p class="mt-2 text-ink/70">Pair the summer palace with a separate temple visit or the ruins of historic Ayutthaya. Each stop has its own navigation target.</p><div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{[
+      ['wat-niwet-thammaprawat','Wat Niwet Thammaprawat','Gothic-style Buddhist temple across the river'],
+      ['ayutthaya-historical-park','Ayutthaya Historical Park','The UNESCO-listed former capital'],
+      ['wat-chaiwatthanaram','Wat Chaiwatthanaram','Riverside prang and temple ruins'],
+      ['wat-mahathat','Wat Mahathat','Sacred archaeological landscape'],
+    ].map(([slug, title, desc]) => <a href={`/en/guides/${slug}/`} class="rounded-2xl bg-white/80 p-5 border border-gold/20 hover:border-gold"><strong class="block text-teak">{title}</strong><span class="block mt-2 text-sm text-ink/65">{desc}</span><span class="block mt-4 text-sm text-teak underline">Explore guide →</span></a>)}</div></div>}
   </section>
 )}

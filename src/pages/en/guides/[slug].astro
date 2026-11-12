@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { siteConfig } from '../../../config';
+import { getI18n } from '../../../i18n/ui';
+import { expandedGuides } from '../../../data/expandedGuides';
+import { guidePlaces, guideMapUrl, palaceImages } from '../../../data/guidePlaces';
+
+export const prerender = true;
+
+export function getStaticPaths() {
+  return expandedGuides.map((guide) => ({ params: { slug: guide[0] }, props: { guide } }));
+}
+
+const { guide } = Astro.props;
+const [slug, title, tagline, introduction, highlights, route, photo] = guide;
+const place = guidePlaces[slug];
+const subjectName = place?.name ?? 'Bang Pa-In Royal Palace';
+const area = place?.area ?? 'Bang Pa-in, Phra Nakhon Si Ayutthaya, Thailand';
+const mapUrl = place ? guideMapUrl(subjectName, area) : siteConfig.mapsUrl;
+const images = place ? [...place.images.map((n) => `/gallery/bang-pa-in-palace-${n}.jpg`), ...(place.externalImages ?? [])] : palaceImages.slice((expandedGuides.findIndex((g) => g[0] === slug) % 9), (expandedGuides.findIndex((g) => g[0] === slug) % 9) + 3).map((n) => `/gallery/bang-pa-in-palace-${n}.jpg`);
+const management = place?.management ?? 'Bang Pa-In Royal Palace is an active royal property associated with the Thai Royal Household. The palace grounds and buildings are subject to official visiting arrangements; staff at the entrance determine public access during ceremonies, private royal use or conservation work.';
+const background = place?.background ?? 'The estate originated in the Ayutthaya period and was revived under King Rama IV before extensive nineteenth-century development under King Chulalongkorn (Rama V). Its Thai, Chinese and European buildings show the changing cultural connections of Siam.';
+const { messages } = await getI18n(Astro.url);
+const canonical = `${siteConfig.domain}/en/guides/${slug}/`;
+const faq = [
+  { q: `What is special about ${title}?`, a: highlights },
+  { q: `How should I plan ${title.toLowerCase()}?`, a: route },
+  { q: `Where is ${subjectName}?`, a: `The destination is in ${area}. Use the subject-specific Google Maps search link on this page and confirm the correct map result before starting navigation.` },
+];
+const structuredData = [
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Bang Pa-In Palace', item: `${siteConfig.domain}/en/` },
+    { '@type': 'ListItem', position: 2, name: 'Visitor Guides', item: `${siteConfig.domain}/en/#more-guides` },
+    { '@type': 'ListItem', position: 3, name: title, item: canonical },
+  ] },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: title, description: tagline, mainEntityOfPage: canonical, about: { '@type': 'TouristAttraction', name: 'Bang Pa-In Palace', url: `${siteConfig.domain}/en/` } },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((item) => ({ '@type': 'Question', name: item.q, acceptedAnswer: { '@type': 'Answer', text: item.a } })) },
+];
+---
+
+<BaseLayout lang="en" messages={messages} title={`${title} | Bang Pa-In Palace Visitor Guide`} description={`${tagline}. Practical context, a walking plan, photography advice and verified reference links.`} canonicalOverride={canonical} alternates={[{ hreflang: 'en', href: canonical }]} jsonLd={structuredData}>
+  <main class="bg-ivory text-ink min-h-screen">
+    <article class="mx-auto max-w-5xl px-5 py-10 md:py-16">
+      <nav class="text-sm text-ink/65 mb-8" aria-label="Breadcrumb"><a href="/en/" class="hover:text-teak">Bang Pa-In Palace</a> / <a href="/en/#more-guides" class="hover:text-teak">Guides</a> / {title}</nav>
+      <div class="grid gap-10 md:grid-cols-2 md:items-center">
+        <div>
+          <p class="text-sm uppercase tracking-widest text-teak">Ayutthaya · Palace visitor guide</p>
+          <h1 class="font-display text-4xl md:text-5xl leading-tight text-teak mt-3">{title}</h1>
+          <p class="text-xl text-ink/75 mt-5">{tagline}</p>
+          <p class="mt-5 leading-relaxed">{introduction}</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a class="rounded-full bg-teak text-white px-5 py-3 text-sm" href={mapUrl} target="_blank" rel="noopener noreferrer">View {subjectName} on Google Maps ↗</a>
+            <a class="rounded-full border border-gold/50 px-5 py-3 text-sm" href="/en/tickets-opening-hours/">Check entry details</a>
+          </div>
+        </div>
+        {images.length > 0 ? <figure>
+          <img src={images[0]} alt={`Photograph associated with ${subjectName}`} class="w-full aspect-[4/3] rounded-2xl object-cover" loading="lazy" />
+          <figcaption class="text-xs text-ink/55 mt-2">{subjectName} · location-matched visitor photography</figcaption>
+        </figure> : <aside class="rounded-2xl border border-gold/30 bg-white/70 p-8"><h2 class="font-display text-2xl text-teak">Explore this destination</h2><p class="mt-3">{subjectName} is a separate stop from the palace. Open the dedicated map result for its exact location and recent visitor photographs.</p><a class="inline-block text-teak underline mt-5" href={mapUrl} target="_blank" rel="noopener noreferrer">Open location and photos ↗</a></aside>}
+      </div>
+      <section class="mt-12 rounded-2xl border-l-4 border-gold bg-white/75 p-7">
+        <h2 class="font-display text-3xl text-teak">About {subjectName}</h2>
+        <p class="mt-4 leading-relaxed">{management}</p>
+        <p class="mt-3 leading-relaxed">{background}</p>
+      </section>
+      {images.length > 1 && <section class="mt-10"><h2 class="font-display text-2xl text-teak mb-4">Views of {subjectName}</h2><div class="grid grid-cols-2 gap-4">{images.slice(1, 5).map((src, i) => <img src={src} class="w-full aspect-[4/3] object-cover rounded-xl" loading="lazy" alt={`${subjectName} visitor view ${i + 2}`} />)}</div></section>}
+      <div class="grid gap-8 md:grid-cols-3 mt-14">
+        <section class="rounded-2xl bg-white/70 border border-gold/20 p-6"><h2 class="font-display text-2xl text-teak">What to notice</h2><p class="leading-relaxed mt-3">{highlights}</p></section>
+        <section class="rounded-2xl bg-white/70 border border-gold/20 p-6"><h2 class="font-display text-2xl text-teak">Suggested visit</h2><p class="leading-relaxed mt-3">{route}</p></section>
+        <section class="rounded-2xl bg-white/70 border border-gold/20 p-6"><h2 class="font-display text-2xl text-teak">Photo and visitor tip</h2><p class="leading-relaxed mt-3">{photo}</p></section>
+      </div>
+      <section class="mt-14 border-t border-gold/25 pt-10"><h2 class="font-display text-3xl text-teak">History and architecture to observe</h2><p class="mt-4 leading-relaxed">{background}</p><p class="mt-3 leading-relaxed">{highlights}</p></section>
+      <section class="mt-12"><h2 class="font-display text-3xl text-teak">Essential visitor information</h2>
+        <dl class="mt-5 divide-y divide-gold/20 border-y border-gold/20">
+          <div class="grid md:grid-cols-3 py-4 gap-2"><dt class="font-semibold">Destination</dt><dd class="md:col-span-2">{subjectName}</dd></div>
+          <div class="grid md:grid-cols-3 py-4 gap-2"><dt class="font-semibold">Location</dt><dd class="md:col-span-2">{area} · <a class="text-teak underline" href={mapUrl} target="_blank" rel="noopener noreferrer">Location and navigation</a></dd></div>
+          <div class="grid md:grid-cols-3 py-4 gap-2"><dt class="font-semibold">Admission and hours</dt><dd class="md:col-span-2">Confirm current prices, admission rules and hours through the official tourism information and at the palace entrance. Changes and restricted areas are possible.</dd></div>
+          <div class="grid md:grid-cols-3 py-4 gap-2"><dt class="font-semibold">Dress</dt><dd class="md:col-span-2">Respect the dress requirements and posted rules of the specific attraction. Royal and religious locations may have stricter standards.</dd></div>
+          <div class="grid md:grid-cols-3 py-4 gap-2"><dt class="font-semibold">Getting there</dt><dd class="md:col-span-2">Road transfer from Bangkok or Ayutthaya, or rail to Bang Pa-in followed by local transport. <a class="text-teak underline" href="/en/how-to-get-there/">See transport guide</a>.</dd></div>
+        </dl>
+      </section>
+      <section class="mt-12"><h2 class="font-display text-3xl text-teak">A simple walking plan</h2><ol class="mt-5 list-decimal pl-6 space-y-3 leading-relaxed"><li>Check the entrance notices, available routes and any temporary closures.</li><li>{route}</li><li>Pause for the architectural and garden details described above.</li><li>Return by a permitted route, leaving time for onward transport.</li></ol></section>
+      <section class="mt-12"><h2 class="font-display text-3xl text-teak">Photography and practical tips</h2><p class="mt-4 leading-relaxed">{photo}</p><p class="mt-3 leading-relaxed">Allow time for shaded rest, carry drinking water and follow local instructions for restricted interiors or ceremonial spaces. To reach this specific stop, use the named Google Maps destination rather than coordinates copied from a different attraction.</p></section>
+      <section class="mt-12"><h2 class="font-display text-3xl text-teak">Frequently asked questions</h2><div class="divide-y divide-gold/20 mt-4">{faq.map((item) => <details class="py-4"><summary class="cursor-pointer font-semibold">{item.q}</summary><p class="mt-3 leading-relaxed">{item.a}</p></details>)}</div></section>
+      <section class="mt-12 rounded-2xl bg-white/70 p-6"><h2 class="font-display text-2xl text-teak">Sources and further reading</h2><p class="mt-3 leading-relaxed">Historical background and attraction context: <a class="text-teak underline" href="https://www.tourismthailand.org/Attraction/bang-pa-in-palace" target="_blank" rel="noopener noreferrer">Tourism Authority of Thailand</a>, <a class="text-teak underline" href="https://go.ayutthaya.go.th/tourist-attraction/no-temple-touring/bang-pa-in-palace/" target="_blank" rel="noopener noreferrer">Go Ayutthaya provincial guide</a> and <a class="text-teak underline" href="https://www.thailandtourismdirectory.go.th/en/attraction/1446" target="_blank" rel="noopener noreferrer">Thailand Tourism Directory</a>. Site-specific opening conditions should be checked shortly before travel.</p>{place?.externalImages && <p class="mt-3 text-sm">Nearby-destination photographs sourced from the <a class="underline text-teak" href={`https://commons.wikimedia.org/w/index.php?search=${encodeURIComponent(subjectName)}&title=Special:MediaSearch&type=image`} target="_blank" rel="noopener noreferrer">Wikimedia Commons media collection for {subjectName}</a>.</p>}</section>
+      <section class="mt-12"><h2 class="font-display text-3xl text-teak">Location and transport map</h2><p class="mt-3">Find the entrance for {subjectName} in {area}. For train and road travel to Bang Pa-In, see the transport guide; nearby Ayutthaya stops require separate onward travel.</p><a class="inline-block mt-5 rounded-full bg-teak text-white px-6 py-3" href={mapUrl} target="_blank" rel="noopener noreferrer">Navigate to {subjectName} ↗</a></section>
+      <section class="mt-12"><h2 class="font-display text-2xl text-teak">Keep exploring</h2><div class="mt-4 flex flex-wrap gap-3"><a href="/en/" class="underline text-teak">Palace overview</a><a href="/en/architecture/" class="underline text-teak">Architecture guide</a><a href="/en/guides/nearby-attractions/" class="underline text-teak">Nearby attractions</a><a href="/en/guides/photography-guide/" class="underline text-teak">Photography guide</a></div></section>
+    </article>
+  </main>
+</BaseLayout>
