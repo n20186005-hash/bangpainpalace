@@ -5,6 +5,7 @@ import th from '../../i18n/th.json';
 import en from '../../i18n/en.json';
 import zh from '../../i18n/zh.json';
 import { languagesList } from '../../i18n/ui';
+import Footer from '../../components/Footer.astro';
 
 export function getStaticPaths() {
   return languagesList.map((lang) => ({ params: { lang } }));
@@ -16,7 +17,7 @@ const legal = m.footer.legal.cookies;
 const meta = { title: `${legal.title} — ${m.footer.brand.name}`, description: legal.title };
 const canonical = `${siteConfig.domain}/${lang}/cookie-settings/`;
 ---
-<BaseLayout lang={lang} title={meta.title} description={meta.description} messages={m} canonicalOverride={canonical} noindex>
+<BaseLayout lang={lang} title={meta.title} description={meta.description} messages={m} canonicalOverride={canonical}>
   <main class="mx-auto max-w-3xl px-4 py-24">
     <a href={`/${lang}/`} class="text-amber-600 hover:underline">← {m.header.home}</a>
     <h1 class="mt-4 text-3xl font-bold text-stone-800">{legal.title}</h1>
@@ -36,4 +37,5 @@ const canonical = `${siteConfig.domain}/${lang}/cookie-settings/`;
     </div>
     <p class="mt-6 text-sm text-stone-500">{legal.consent}</p>
   </main>
+  <Footer lang={lang} messages={m} />
 </BaseLayout>

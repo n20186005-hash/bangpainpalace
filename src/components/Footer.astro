@@ -3,7 +3,12 @@ import { siteConfig } from '../config';
 import type { Lang } from '../i18n/ui';
 
 interface Props { lang: Lang; messages: Record<string, any>; }
-const { lang } = Astro.props;
+const { lang, messages } = Astro.props;
+const legalLinks = [
+  { path: 'privacy-policy', label: messages.footer.legal.privacy.title },
+  { path: 'terms-of-service', label: messages.footer.legal.terms.title },
+  { path: 'cookie-settings', label: messages.footer.legal.cookies.title },
+];
 const rights = { zh: '版權所有', th: 'สงวนลิขสิทธิ์', en: 'All rights reserved' }[lang];
 const note = {
   zh: '本网站是一个独立的旅游信息项目。我们与任何政府机构或官方组织均无关联。',
@@ -13,8 +18,13 @@ const note = {
 ---
 
 <footer class="bg-teakDeep text-ivory py-8">
-  <div class="max-w-7xl mx-auto px-5 text-center text-xs sm:text-sm leading-relaxed text-ivory/75 space-y-2">
-    <p>© 2026 {siteConfig.name[lang]} · {rights}.</p>
-    <p>{note}</p>
+  <div class="max-w-7xl mx-auto px-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-xs sm:text-sm leading-relaxed text-ivory/75">
+    <div class="space-y-2">
+      <p>© 2026 {siteConfig.name[lang]} · {rights}.</p>
+      <p>{note}</p>
+    </div>
+    <nav aria-label={messages.footer.legal.privacy.title} class="flex flex-wrap gap-x-5 gap-y-2 sm:justify-end sm:text-right shrink-0">
+      {legalLinks.map(({ path, label }) => <a class="hover:text-goldBright underline-offset-4 hover:underline" href={`/${lang}/${path}/`}>{label}</a>)}
+    </nav>
   </div>
 </footer>
